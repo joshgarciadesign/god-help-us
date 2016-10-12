@@ -1,0 +1,791 @@
+<html>
+  <head>
+    <link rel="stylesheet"
+       href="http://cdn.foundation5.zurb.com/foundation.css">
+    <link rel="stylesheet" href="santacruz.css" type="text/css" media="all">
+    <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+    <script src="https://use.typekit.net/mgx5scd.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  </head>
+  <body>
+
+<!-- Top Bar Nav  -->
+<div class="contain-to-grid fixed">
+<nav class="top-bar" data-topbar="" role="navigation">
+<ul class="title-area">
+<li class="name">
+<a href="/">Home</a>
+</li>
+<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+</ul>
+
+
+<section class="top-bar-section">
+<!-- Right Nav Section -->
+<ul class="lefts">
+  <li class="">
+    <a href="/travels">Stay</a>
+  </li>
+  <li class="has-dropdown not-click">
+    <a href="/restaurants">Dine</a>
+    <ul class="dropdown dine">
+      <li>
+        <div class="row medium-uncollapse">
+
+          <div class="small-12 medium-7 column">
+            <h5><a>Dining Options</a></h5>
+            <div class="row">
+              <div class="small-12 medium-4 column">
+                <ul>
+                  <li><a href="#">American</a></li>
+                  <li><a href="#">Chinese</a></li>
+                  <li><a href="#">French</a></li>
+                  <li><a href="#">Indian/Pakistani </a></li>
+                  <li><a href="#">Italian</a></li>
+                </ul>
+              </div>
+              <div class="small-12 medium-4 column">
+                <ul>
+                  <li><a href="#">Japanese</a></li>
+                  <li><a href="#">Mexican</a></li>
+                  <li><a href="#">Middle Eastern</a></li>
+                  <li><a href="#">Thai </a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+              <div class="small-12 medium-4 column ">
+                <ul class="larger">
+                  <li><a href="#">Wine</a></li>
+                  <li><a href="#">Cafes</a></li>
+                  <li><a href="#">Caterers</a></li>
+                </ul>
+              </div>
+            </div>
+            <h6><a>More Dining Options</a></h6>
+          </div><!-- Column -->
+          <div class="small-12 medium-5 column">
+            <h5><a>Make Reservations</a></h5>
+            <form class="reservation">
+              <div class="row ">
+                <div class="medium-6 columns">
+                  <label>Date<br>
+                    <input type="text" class="datepicker" placeholder="10/16/16">
+                  </label>
+                </div>
+                <div class="medium-3 columns">
+                  <label>Time<br>
+                    <select>
+                      <option value="700">7:00PM</option>
+                      <option value="715">7:15PM</option>
+                      <option value="730">7:30PM</option>
+                      <option value="745">7:45PM</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="medium-3 columns">
+                  <label>Guests<br>
+                    <select>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                    </select>
+                  </label>
+                </div>
+              </div><!-- Row -->
+              <div class="row">
+                <div class="medium-12 columns">
+                  <label>Specifics<br>
+                    <input type="text" placeholder="Location, Restaurant, Cuisine"></input>
+                  </label>
+                </div>
+              </div><!-- Row -->
+              <div class="row">
+                <div class="medium-12 columns">
+                    <a href="#" class="button orange-bg tiny">Find a Table</a>
+                  </label>
+                </div>
+              </div><!-- Row -->
+            </form>
+
+          </div><!-- Column -->
+        </div><!-- Row -->
+      </li>
+    </ul>
+  </li>
+  <li class="has-dropdown not-click">
+    <a href="/attractions">Explore</a>
+    <ul class="dropdown explore">
+      <li>
+        <div class="row medium-uncollapse">
+          <div class="small-12 medium-4 column">
+            <h5><a>Attractions</a></h5>
+            <ul>
+              <li><a href="#">Amusement Parks</a></li>
+              <li><a href="#">Beaches</a></li>
+              <li><a href="#">Golf</a></li>
+              <li><a href="#">Museums</a></li>
+              <li><a href="#">Wineries</a></li>
+            </ul>
+            <h6><a>More Attractions</a></h6>
+          </div><!-- Column -->
+          <div class="small-12 medium-4 column">
+            <h5><a>Nightlife</a></h5>
+            <ul>
+              <li><a href="#">Bars</a></li>
+              <li><a href="#">Clubs</a></li>
+              <li><a href="#">Golf</a></li>
+              <li><a href="#">Lounges</a></li>
+              <li><a href="#">Live Music</a></li>
+            </ul>
+            <h6><a>More Nightlife</a></h6>
+          </div><!-- Column -->
+          <div class="small-12 medium-4 column">
+            <h5><a>Events</a></h5>
+            <ul>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Food &amp; Drink</a></li>
+              <li><a href="#">Festivals</a></li>
+              <li><a href="#">Sports </a></li>
+              <li><a href="#">Theater</a></li>
+            </ul>
+            <h6><a>More Events</a></h6>
+          </div><!-- Column -->
+        </div><!-- Row -->
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<!-- Left Nav Section -->
+<ul class="right">
+  <li class="has-form">
+  <div class="row collapse">
+    <div class="large-8 small-9 columns">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="large-4 small-3 columns">
+      <button name="button" type="submit" class="topbar-button">
+          <i class="fa fa-search "></i>
+      </button>
+    </div>
+  </div>
+  </li>
+</ul>
+</section>
+</nav>
+</div>
+
+<!-- / Top Bar Nav  -->
+
+
+
+      <div class="row">
+        <div class="small-12">
+          <h1>CSS</h1>
+          <h4>Custom Elements &amp; Components for SantaCruz.com</h4>
+        </div>
+
+        <div class="large-2 columns inline-fixed">
+          <hr class="thick">
+          <h5>Contents</h5>
+          <ul>
+            <li><a href="#aspect-ratios">Aspect Ratios</a></li>
+            <li><a>Index Listing Cards</a></li>
+            <li><a>Colors</a></li>
+            <li><a>Buttons</a></li>
+            <li><a>Typography</a></li>
+          </ul>
+        </div>
+        <div class="large-9 columns">
+          <hr class="thick">
+          <h2 id="aspect-ratios">Aspect Ratios</h2>
+          <ul class="small-block-grid-2 medium-block-grid-3">
+            <li>
+                <h3>16:9 Ratio</h3>
+                <div class="sixteen-nine">
+                  <div class="content medium-gray-bg">
+                    insert content here
+                    this will maintain a 16:9 aspect ratio
+                  </div>
+                </div>
+            </li>
+            <li>
+                <h3>4:3 Ratio</h3>
+                <div class="four-three">
+                  <div class="content medium-gray-bg">
+                    insert content here
+                    this will maintain a 4:4 aspect ratio
+                  </div>
+                </div>
+            </li>
+            <li>
+                <h3>1:1 Square Ratio</h3>
+                <div class="square">
+                  <div class="content medium-gray-bg">
+                    insert content here
+                    this will maintain a square aspect ratio
+                  </div>
+                </div>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h2>Listing Cards</h2>
+
+          <h3>Featured Listing Cards and Grid</h3>
+          <ul class="small-block-grid-1 medium-block-grid-3 light-gray-bg card-grid">
+            <li>
+              <div class="featured-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-2.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="address">
+                    <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                    <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                  </div>
+                  <p class="description">S&uuml;da means "heart" in Estonian and represents our healthy and flavorful food, unique cocktails and lively atmosphere. With a rustic-modern decor a&hellip;</p>
+                  <a href="#" class="button radius small">Make Reservations</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="featured-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-2.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="address">
+                    <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                    <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                  </div>
+                  <p class="description">S&uuml;da means "heart" in Estonian and represents our healthy and flavorful food, unique cocktails and lively atmosphere. With a rustic-modern decor a&hellip;</p>
+                  <a href="#" class="button radius small">Make Reservations</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="featured-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-2.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="address">
+                    <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                    <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                  </div>
+                  <p class="description">S&uuml;da means "heart" in Estonian and represents our healthy and flavorful food, unique cocktails and lively atmosphere. With a rustic-modern decor a&hellip;</p>
+                  <a href="#" class="button radius small">Make Reservations</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h3>Standard Listing Cards</h3>
+          <ul class="small-block-grid-1 medium-block-grid-3 card-grid">
+            <li>
+              <div class="standard-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                  <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="standard-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                  <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="standard-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                  <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="standard-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                  <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="standard-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                  <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="standard-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/restaurant-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <h4>Business Title Goes Here on Several Lines</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="address">7500 Old Dominion Ct, Aptos 95003<br>
+                  <a href="tel:1-831-688-8987">831.688.8987</a></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h3>Photo Background Card</h3>
+          <ul class="small-block-grid-1 medium-block-grid-2 card-grid">
+            <li>
+              <div class="photo-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <div class="info">
+                        <h4>The California Honeydrops and a Really Long Name</h4>
+                        <p>Sat Sep 22  &bull;  Catalyst Club </p>
+                        <a href="#" class="button radius tiny">Buy Tickets</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="photo-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <div class="info">
+                        <h4>The California Honeydrops and a Really Long Name</h4>
+                        <p>Sat Sep 22  &bull;  Catalyst Club </p>
+                        <a href="#" class="button radius tiny">Buy Tickets</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h3>Dark Background Listing</h3>
+          <ul class="small-block-grid-1 medium-block-grid-3 dark-card-grid">
+            <li>
+              <div class="photo-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <div class="info">
+                        <h4>The California Honeydrops and a Really Long Name</h4>
+                        <p>Sat Sep 22  &bull;  Catalyst Club </p>
+                        <a href="#" class="button radius tiny">Buy Tickets</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="photo-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <div class="info">
+                        <h4>The California Honeydrops and a Really Long Name</h4>
+                        <p>Sat Sep 22  &bull;  Catalyst Club </p>
+                        <a href="#" class="button radius tiny">Buy Tickets</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="photo-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <div class="info">
+                        <h4>The California Honeydrops and a Really Long Name</h4>
+                        <p>Sat Sep 22  &bull;  Catalyst Club </p>
+                        <a href="#" class="button radius tiny">Buy Tickets</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="photo-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <div class="info">
+                        <h4>The California Honeydrops and a Really Long Name</h4>
+                        <p>Sat Sep 22  &bull;  Catalyst Club </p>
+                        <a href="#" class="button radius tiny">Buy Tickets</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="photo-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <div class="info">
+                        <h4>The California Honeydrops and a Really Long Name</h4>
+                        <p>Sat Sep 22  &bull;  Catalyst Club </p>
+                        <a href="#" class="button radius tiny">Buy Tickets</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="photo-card">
+                <div class="sixteen-nine">
+                  <div class="content">
+                    <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                    <div class="gradient-overlay">
+                      <div class="info">
+                        <h4>The California Honeydrops and a Really Long Name</h4>
+                        <p>Sat Sep 22  &bull;  Catalyst Club </p>
+                        <a href="#" class="button radius tiny">Buy Tickets</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h2>Colors</h2>
+
+          <h3>Main Colors</h3>
+          <ul class="small-block-grid-3 medium-block-grid-4">
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content orange-bg"></div></div>
+              <h5>Orange</h5>
+              <p>#fa4c07</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content dark-blue-bg"></div></div>
+              <h5>Dark Blue</h5>
+              <p>#168dab</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content burgundy-bg"></div></div>
+              <h5>Burgundy</h5>
+              <p>#790300</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content teal-bg"></div></div>
+              <h5>Teal</h5>
+              <p>#53cfb8</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content green-bg"></div></div>
+              <h5>Green</h5>
+              <p>#b1b002</p>
+            </li>
+          </ul>
+
+          <h3>Secondary Colors</h3>
+          <ul class="small-block-grid-4 medium-block-grid-6">
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content light-orange-bg"></div></div>
+              <h5>Light Orange</h5>
+              <p>#ff6900</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content dark-orange-bg"></div></div>
+              <h5>Dark Orange</h5>
+              <p>#d93801</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content light-blue-bg"></div></div>
+              <h5>Light Blue</h5>
+              <p>#43d4fe</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content dark-burgundy-bg"></div></div>
+              <h5>Dark Burgundy</h5>
+              <p>#660000</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content light-teal-bg"></div></div>
+              <h5>Light Teal</h5>
+              <p>#d1ecea</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content yellow-bg"></div></div>
+              <h5>Yellow</h5>
+              <p>#ffcc4d</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content pink-bg"></div></div>
+              <h5>Pink</h5>
+              <p>#f78db6</p>
+            </li>
+          </ul>
+
+          <h3>Grayscale</h3>
+          <ul class="small-block-grid-4 medium-block-grid-6">
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content dark-gray-bg"></div></div>
+              <h5>Dark Gray</h5>
+              <p>#333</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content medium-gray-bg"></div></div>
+              <h5>Medium Gray</h5>
+              <p>#a7a9ac</p>
+            </li>
+            <li class="swatch">
+              <div class="sixteen-nine"><div class="content light-gray-bg"></div></div>
+              <h5>Light Gray</h5>
+              <p>#f2f2f2</p>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h2>Forms &amp; Buttons</h2>
+
+          <h3>Sign Up Form</h3>
+          <div class="row collapse center-vertical sign-up-form">
+            <div class="medium-8 columns">
+              <p>Get exclusive local offers & discounts sent right to your inbox</p>
+            </div>
+            <div class="medium-4 columns">
+              <form>
+                <div class="row collapse">
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="Your Email Address">
+                  </div>
+                  <div class="small-3 columns">
+                    <a href="#" class="button postfix">Sign Up</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <hr>
+
+          <h3>Dinner Reservation Form</h3>
+          <h4><a>Make Reservations</a></h4>
+          <form class="reservation">
+            <div class="row">
+              <div class="medium-6 columns">
+                <label>Date<br>
+                  <input type="text" class="datepicker" placeholder="10/11/16 (Today)">
+                </label>
+              </div>
+              <div class="medium-4 columns">
+                <label>Time<br>
+                  <select>
+                    <option value="700">7:00PM</option>
+                    <option value="715">7:15PM</option>
+                    <option value="730">7:30PM</option>
+                    <option value="745">7:45PM</option>
+                  </select>
+                </label>
+              </div>
+              <div class="medium-2 columns">
+                <label>Guests<br>
+                  <select>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                  </select>
+                </label>
+              </div>
+            </div><!-- Row -->
+            <div class="row collapse">
+              <div class="medium-12 columns">
+                <label>Specifics<br>
+                  <input type="text" placeholder="Location, Restaurant, Cuisine"></input>
+                </label>
+              </div>
+            </div><!-- Row -->
+            <div class="row collapse">
+              <div class="medium-12 columns">
+                  <a href="#" class="button orange-bg small">Find a Table</a>
+                </label>
+              </div>
+            </div><!-- Row -->
+          </form>
+
+          <hr>
+
+          <h3>Hotel Reservation Form</h3>
+          <h4><a>Book a Room</a></h4>
+          <form class="reservation">
+            <div class="row">
+              <div class="medium-6 columns">
+                <label>Check In<br>
+                  <input type="text" class="datepicker" placeholder="10/11/16 (Today's Date)">
+                </label>
+              </div>
+              <div class="medium-6 columns">
+                <label>Check Out<br>
+                  <input type="text" class="datepicker" placeholder="10/12/16">
+                </label>
+              </div>
+            </div><!-- Row -->
+            <div class="row">
+              <div class="medium-4 columns">
+                <label>Rooms<br>
+                  <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </label>
+              </div>
+              <div class="medium-4 columns">
+                <label>Adults<br>
+                  <select>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                  </select>
+                </label>
+              </div>
+              <div class="medium-4 columns">
+                <label>Kids<br>
+                  <select>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                  </select>
+                </label>
+              </div>
+            </div><!-- Row -->
+            <div class="row collapse">
+              <div class="medium-12 columns">
+                <label>
+                  <a href="#" class="button orange-bg small">Browse Hotels &amp; Homes</a>
+                  <p>Prefer to Call? <strong>800.780.5733</strong>
+                </label>
+              </div>
+            </div><!-- Row -->
+          </form>
+
+          <hr>
+
+          <h3>Buttons</h3>
+          <div class="row center-vertical">
+            <div class="medium-3 columns">
+              <a href="#" class="button large radius">Large Button</a>
+            </div>
+            <div class="medium-3 columns">
+              <a href="#" class="button radius">Normal Button</a>
+            </div>
+            <div class="medium-3 columns">
+              <a href="#" class="button small radius">Small Button</a>
+            </div>
+            <div class="medium-3 columns">
+              <a href="#" class="button tiny radius">Tiny Button</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+  </body>
+</html>
