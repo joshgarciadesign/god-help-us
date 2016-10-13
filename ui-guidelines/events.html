@@ -1,0 +1,635 @@
+<html>
+  <head>
+    <link rel="stylesheet"
+       href="http://cdn.foundation5.zurb.com/foundation.css">
+    <link rel="stylesheet" href="santacruz.css" type="text/css" media="all">
+    <link rel="stylesheet" href="foundation.calendar.css" type="text/css" media="all">
+    <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+    <script src="https://use.typekit.net/mgx5scd.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <section class="hero events">
+      <div class="background-1">
+        <div class="container">
+          <div class="page-title">
+            <h1>Events</h1>
+          </div>
+        </div>
+      </div>
+      <div class="background-2">
+        <div class="container">
+          <div class="row">
+            <div class="intro large-7 column">
+              <div class="breadcrumbs">
+                <ol>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li>Events</li>
+                </ol>
+              </div>
+              <div class="opening">
+                <p>Buffeted by the Santa Cruz Mountains and Monterey Bay, Santa Cruz attractions offer a variety of activities for the entire family. The Santa Cruz Beach Boardwalk, Monterey Bay Aquarium and The Mystery Spot have long drawn tourists and residents alike.</p>
+                <p>Home to the Santa Cruz Warriors, the city hosts basketball games at the downtown stadium every season starting in November. The Seymour Marine Discovery Center and Sanctuary Exploration Center near the Santa Cruz Wharf offers a window into the local marine environment.  &hellip;</p>
+                <p><a>Read More</a></p>
+              </div>
+              <div class="categories">
+                <a href="#" class="button dark-orange small">Music</a>
+                <a href="#" class="button dark-orange small">Food &amp; Drinks</a>
+                <a href="#" class="button dark-orange small">Festivals</a>
+                <a href="#" class="button dark-orange small">Sports</a>
+                <a href="#" class="button dark-orange small">Theater</a>
+              </div>
+            </div><!--.intro  -->
+
+            <div class="ad large-4 column">
+              <div class="ad-300x250">
+                <img src="images/300x250-ad.jpg" width="300" height="250" alt="Ad">
+              </div>
+            </div><!--.ad  -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="ad-row">
+      <div class="center-block">
+        <div class="ad-300x100">
+          <img src="images/300x100-ad.jpg" width="300" height="100" alt="300x100 ad">
+        </div>
+        <div class="ad-300x100">
+          <img src="images/300x100-ad.jpg" width="300" height="100" alt="300x100 ad">
+        </div>
+        <div class="ad-300x100">
+          <img src="images/300x100-ad.jpg" width="300" height="100" alt="300x100 ad">
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-events">
+      <div class="container">
+        <div class="row collapse">
+          <h2>Event Types</h2>
+          <div class="large-8 column">
+            <div class="row masonry">
+              <div class="medium-4 column">
+                <div class="photo-card" style="background-image: url('images/music.jpg')">
+                  <div class="gradient-overlay">
+                    <div class="info">
+                      <h4><a href="#">Music</a></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-8 column">
+                <div class="photo-card" style="background-image: url('images/food.jpg')">
+                  <div class="gradient-overlay">
+                    <div class="info">
+                      <h4><a href="#">Food &amp; Drink</a></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row masonry">
+              <div class="medium-8 column">
+                <div class="photo-card" style="background-image: url('images/festivals.jpg')">
+                  <div class="gradient-overlay">
+                    <div class="info">
+                      <h4><a href="#">Festivals</a></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-4 column">
+                <div class="photo-card" style="background-image: url('images/sports.jpg')">
+                      <div class="gradient-overlay">
+                        <div class="info">
+                          <h4><a href="#">Sports</a></h4>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="large-4 column sidebar">
+            <div class="ad-300x600">
+              <img src="images/300x600-ad.jpg" width="300" height="600" alt="Ad">
+            </div>
+          </div>
+        </div>
+        <div class="leaderboard-ad-container show-for-large-up">
+          <img src="images/leaderboard-ad.jpg" width="728" height="90" alt="leaderboard ad">
+        </div>
+      </div>
+    </section>
+
+    <section class="calendar-container">
+      <div class="container">
+        <ul class="calendar">
+          <li class="title">
+            <span class="prev-month"><a href="#">&larr; September</a></span>
+            <span class="current-month">October</span>
+            <span class="prev-month"><a href="#">September &rarr;</a></span>
+          </li>
+          <li class="filter-container light-gray-bg">
+            <div class="filter">
+              <div>
+                <span>Filter:</span>
+              </div>
+              <div>
+                <select>
+                  <option value="all">All Categories</option>
+                  <option value="Comedy">Comedy</option>
+                  <option value="Dance">Dance</option>
+                  <option value="Clubs">Clubs</option>
+                  <option value="Literary">Literary</option>
+                  <option value="Music">Music</option>
+                  <option value="Nighlife">Nighlife</option>
+                  <option value="Sports">Sports &amp; Recreation</option>
+                  <option value="Theater">Theater</option>
+                </select>
+              </div>
+              <div>
+                <select>
+                  <option value="all">All Neighborhoods</option>
+                  <option value="Downtown">Downtown</option>
+                  <option value="Boardwalk">Boardwalk</option>
+                  <option value="Beach">Beach</option>
+                </select>
+              </div>
+            </div><!-- .filter  -->
+          </li>
+          <li class="week">
+              <div class="large-1 day past-day">
+                <div class="date-header">
+                  <span class="date">9</span>
+                  <span class="day-of-week">Sun</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Stereo No Aware, Yela Silo&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day past-day">
+                <div class="date-header">
+                  <span class="date">10</span>
+                  <span class="day-of-week">Mon</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-2.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Hot Club of San Francisco&hellip;</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Santa Cruz City Council Candidates&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day past-day">
+                <div class="date-header">
+                  <span class="date">11</span>
+                  <span class="day-of-week">Tue</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-3.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Other Desert Cities</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">The Soul Rebels &amp; Talib Kweli&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day past-day">
+                <div class="date-header">
+                  <span class="date">12</span>
+                  <span class="day-of-week">Wed</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">History of Santa Cruz Opening Gala</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Edge of the West + Shakey Zimmerm&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day today">
+                <div class="date-header">
+                  <span class="date">13</span>
+                  <span class="day-of-week">Thu</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/thai.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Introduction to Cooking Thai Food&hellip;</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Guitar Army</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">14</span>
+                  <span class="day-of-week">Fri</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/pet-friendly.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Travelling with Your Pet</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">The Sound of Music Screening</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">15</span>
+                  <span class="day-of-week">Sat</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-2.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">The Brady Who?</h6>
+                </div>
+              </div>
+          </li>
+          <li class="week">
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">16</span>
+                  <span class="day-of-week">Sun</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Stereo No Aware, Yela Silo&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">17</span>
+                  <span class="day-of-week">Mon</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-2.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Hot Club of San Francisco&hellip;</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Santa Cruz City Council Candidates&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">18</span>
+                  <span class="day-of-week">Tue</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-3.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Other Desert Cities</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">The Soul Rebels &amp; Talib Kweli&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">19</span>
+                  <span class="day-of-week">Wed</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">History of Santa Cruz Opening Gala</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Edge of the West + Shakey Zimmerm&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">20</span>
+                  <span class="day-of-week">Thu</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/thai.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Introduction to Cooking Thai Food&hellip;</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Guitar Army</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">21</span>
+                  <span class="day-of-week">Fri</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/pet-friendly.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Travelling with Your Pet</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">The Sound of Music Screening</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">22</span>
+                  <span class="day-of-week">Sat</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-2.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">The Brady Who?</h6>
+                </div>
+              </div>
+          </li>
+          <li class="week">
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">23</span>
+                  <span class="day-of-week">Sun</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Stereo No Aware, Yela Silo&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">24</span>
+                  <span class="day-of-week">Mon</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-2.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Hot Club of San Francisco&hellip;</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Santa Cruz City Council Candidates&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">25</span>
+                  <span class="day-of-week">Tue</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-3.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Other Desert Cities</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">The Soul Rebels &amp; Talib Kweli&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">26</span>
+                  <span class="day-of-week">Wed</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">History of Santa Cruz Opening Gala</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Edge of the West + Shakey Zimmerm&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">27</span>
+                  <span class="day-of-week">Thu</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/thai.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Introduction to Cooking Thai Food&hellip;</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Guitar Army</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">28</span>
+                  <span class="day-of-week">Fri</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/pet-friendly.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Travelling with Your Pet</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">The Sound of Music Screening</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">29</span>
+                  <span class="day-of-week">Sat</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-2.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">The Brady Who?</h6>
+                </div>
+              </div>
+          </li>
+          <li class="week">
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">30</span>
+                  <span class="day-of-week">Sun</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Stereo No Aware, Yela Silo&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day">
+                <div class="date-header">
+                  <span class="date">31</span>
+                  <span class="day-of-week">Mon</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-2.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Hot Club of San Francisco&hellip;</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Santa Cruz City Council Candidates&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day next-month">
+                <div class="date-header">
+                  <span class="date">1</span>
+                  <span class="day-of-week">Tue</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-3.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Other Desert Cities</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">The Soul Rebels &amp; Talib Kweli&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day next-month">
+                <div class="date-header">
+                  <span class="date">2</span>
+                  <span class="day-of-week">Wed</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">History of Santa Cruz Opening Gala</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Edge of the West + Shakey Zimmerm&hellip;</h6>
+                </div>
+              </div>
+              <div class="large-1 day next-month">
+                <div class="date-header">
+                  <span class="date">3</span>
+                  <span class="day-of-week">Thu</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/thai.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Introduction to Cooking Thai Food&hellip;</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">Guitar Army</h6>
+                </div>
+              </div>
+              <div class="large-1 day next-month">
+                <div class="date-header">
+                  <span class="date">4</span>
+                  <span class="day-of-week">Fri</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/pet-friendly.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">Travelling with Your Pet</h6>
+                </div>
+                <div class="event">
+                  <h6 class="event-title">The Sound of Music Screening</h6>
+                </div>
+              </div>
+              <div class="large-1 day next-month">
+                <div class="date-header">
+                  <span class="date">5</span>
+                  <span class="day-of-week">Sat</span>
+                </div>
+                <div class="featured-event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-2.jpg" alt="event">
+                    </div>
+                  </div>
+                  <h6 class="event-title">The Brady Who?</h6>
+                </div>
+              </div>
+          </li>
+        </ul>
+        <div class="leaderboard-ad-container show-for-large-up">
+          <img src="images/leaderboard-ad.jpg" width="728" height="90" alt="leaderboard ad">
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
