@@ -12,6 +12,7 @@ section{
   padding: 65px 0 85px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .row {
@@ -327,8 +328,10 @@ ul.filter-options li > * {
 .leaderboard-ad-container {
     width: 728px;
     height: 90px;
-    margin: 90px auto 80px;
+    margin: 90px auto 0;
 }
+
+/* Advertising */
 
 .ad-row{
   background-color: #d2edeb;
@@ -361,6 +364,12 @@ ul.filter-options li > * {
   margin-left: auto;
   margin-right: auto;
   border: 5px solid white;
+}
+
+.hero .ad-300x250 {
+    width: 310px;
+    height: 260;
+    border: 5px solid white;
 }
 
 
@@ -402,6 +411,12 @@ ul.filter-options li > * {
 
 .masonry .photo-card h4 a {
     border-bottom: none;
+    color: #790300;
+    transition: color 0.3s;
+}
+
+.masonry .photo-card h4 a:hover {
+    color: #fa4c07;
 }
 
 .masonry > .column:first-child {
@@ -419,6 +434,7 @@ ul.filter-options li > * {
 .four-three,
 .square {
   position: relative;
+  overflow: hidden;
 }
 
 .sixteen-nine:before {
@@ -473,9 +489,12 @@ ul.pagination li a, ul.pagination li button {
 }
 
 ul.pagination.center {
-    display: inline-block;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255,255,255,0.75);
+  padding: 8px 10px;
+  border-radius: 2px;
 }
 
 
@@ -501,6 +520,16 @@ ul.pagination.center {
 .photo-card img{
   width: 100%;
   max-width: 100%;
+}
+
+.photo-card {
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.photo-card:hover {
+    transform: scale(1.03,1.03);
+    cursor: pointer;
 }
 
 .standard-card .gradient-overlay,
@@ -574,7 +603,7 @@ ul.pagination.center {
   text-rendering: optimizeLegibility;
   position: absolute;
   bottom: 0;
-  margin: 0 10px 7px;
+  margin: 0 14px 15px;
 }
 
 .standard-card .info,
@@ -644,28 +673,28 @@ p.address a:hover, p.address a:focus{
 
 /* Colors */
 
-.orange-bg{background-color: #fa4c07;}
-.dark-blue-bg{background-color: #168dab}
-.burgundy-bg{background-color: #790300}
-.teal-bg{background-color: #53cfb8}
-.green-bg{background-color: #b1b002}
-.light-orange-bg{background-color: #ff6900}
-.dark-orange-bg{background-color: #d93801}
-.light-blue-bg{background-color: #43d4fe}
-.dark-burgundy-bg{background-color: #660000}
-.light-teal-bg{background-color: #d1ecea}
-.yellow-bg{background-color: #ffcc4d}
-.pink-bg{background-color: #f78db6}
+.orange-bg{background-color: #fa4c07 !important;}
+.dark-blue-bg{background-color: #168dab !important}
+.burgundy-bg{background-color: #790300 !important}
+.teal-bg{background-color: #53cfb8 !important}
+.green-bg{background-color: #b1b002 !important}
+.light-orange-bg{background-color: #ff6900 !important}
+.dark-orange-bg{background-color: #d93801 !important}
+.light-blue-bg{background-color: #43d4fe !important}
+.dark-burgundy-bg{background-color: #660000 !important}
+.light-teal-bg{background-color: #d1ecea !important}
+.yellow-bg{background-color: #ffcc4d !important}
+.pink-bg{background-color: #f78db6 !important}
 
 
 .dark-gray-bg {
-    background-color: #333;
+    background-color: #333 !important;
 }
 .medium-gray-bg {
-    background-color: #a7a9ac;
+    background-color: #a7a9ac !important;
 }
 .light-gray-bg {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 !important;
 }
 
 /* Topbar  */
@@ -747,6 +776,24 @@ section.hero {
   border-top-color: #fb4c07;
 }
 
+.stay .background-1 {
+  background-image: url('images/stay-cover-primary.jpg');
+}
+
+.stay .background-2{
+  background-image: url('images/stay-cover-secondary.jpg');
+  border-top-color: #168dab;
+}
+
+.explore .background-1 {
+  background-image: url('images/explore-cover-primary.jpg');
+}
+
+.explore .background-2{
+  background-image: url('images/explore-cover-secondary.jpg');
+  border-top-color: #168dab;
+}
+
 .page-title h1 {
     color: white;
     line-height: 1;
@@ -822,6 +869,30 @@ section.hero {
 .more-restaurants {
     background-image: url(images/more-restaurants-bg.jpg);
 }
+
+section.featured-hotels{
+  background-image: url('images/featured-hotels-bg.jpg');
+}
+
+section.attractions {
+    border-top: 20px solid hsla(176,43%,65%,1);
+    background-image: url('images/attractions-index-bg.jpg');
+}
+
+section.nightlife{
+  border-top: 20px solid #168dab;
+  background-image: url('images/nightlife-index-bg.jpg');
+}
+
+section.events{
+  background-image: url('images/events-index-bg.jpg');
+}
+
+/* Section Specifics */
+.nightlife h2 {
+    color: white;
+}
+
 
 
 @media only screen and (min-width: 40.0625em){
