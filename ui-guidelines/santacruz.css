@@ -1084,7 +1084,7 @@ section.hero.profile {
 
 .hero.profile .container {
     position: absolute;
-    top: 65px;
+    top: 0;
     margin: 0 auto;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -1196,7 +1196,8 @@ section.main.profile {
       background-color: white;
       box-shadow: 0 10px 10px rgba(0,0,0,0.25);
       border-top: 5px solid #d93801;
-      width: 50vw;
+      width: 50vw !important;
+      transform: translateX(-33%);
   }
 
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
