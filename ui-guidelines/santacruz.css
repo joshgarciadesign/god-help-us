@@ -368,7 +368,7 @@ ul.filter-options li > * {
     padding: 0;
 }
 
-.sidebar .ad-300x250:first-child {
+.sidebar .ad-300x250:first-of-type {
     margin-top: 50px;
 }
 
@@ -917,6 +917,10 @@ section.main.card-grid {
 #map {
     min-height: 50vh;
     max-height: 100vh;
+    background-image: url(images/sample-map.jpg);
+    background-size: cover;
+    margin-bottom: 60px;
+    border-top: 10px solid #168dab;
 }
 
 /* Section Backgrounds */
