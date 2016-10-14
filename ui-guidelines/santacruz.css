@@ -9,11 +9,17 @@
 }
 
 section{
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+section:not(.top-bar-section){
   padding: 65px 0 85px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 .row {
     max-width: 80%;
