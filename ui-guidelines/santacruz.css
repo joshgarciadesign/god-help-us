@@ -1134,10 +1134,10 @@ section.main.profile {
 }
 
 .main.profile .main-info,
-.main..profile .description,
-.main..profile .photo-gallery,
-.main..profile .map,
-.main..profile .amenities {
+.main.profile .description,
+.main.profile .photo-gallery,
+.main.profile .map,
+.main.profile .amenities {
     margin-top: 50px ;
 }
 
