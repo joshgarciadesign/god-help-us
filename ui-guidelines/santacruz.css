@@ -712,6 +712,10 @@ p.address a:hover, p.address a:focus{
     background-color: #f2f2f2 !important;
 }
 
+.dark-gray-bg h2 {
+    color: white;
+}
+
 /* Topbar  */
 .contain-to-grid .top-bar {
     font-family: "freight-macro-pro", serif;
@@ -1125,7 +1129,8 @@ section.hero.profile {
     padding: 12px 25px;
     position: absolute;
     bottom: 0;
-    background-color: #660000;
+    background-color: rgba(102, 0, 0, 0.75);
+    max-width: 65%;
 }
 
 section.main.profile {
@@ -1169,6 +1174,68 @@ section.main.profile {
 .main.profile .amenities {
     margin-top: 50px ;
 }
+
+/* Article */
+.meta {
+    margin: 40px 0 0;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.meta:after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 6px;
+    background-color: #ff6900;
+    position: absolute;
+    bottom: 0;
+}
+
+.subtitle h2 {
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-size: 1.8rem;
+    color: #404040;
+    font-weight: 300;
+    max-width: 75%;
+}
+
+.byline, .byline a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.meta .date {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #999;
+    font-size: 0.75rem;
+    margin-top: 2px;
+}
+
+.social-share {
+    margin-top: 30px;
+}
+
+.social-share a {
+    border-bottom: none;
+    margin-right: 20px;
+}
+
+.social-share span {
+    margin-right: 20px;
+}
+
+article {
+    margin-top: 80px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ededed;
+}
+
+
 
 
 
