@@ -132,7 +132,7 @@ input[type="text"] {
 
 /* Dropdown */
 .top-bar-section ul li:hover:not(.has-form) > a {
-    background-color: #d93801
+    background-color: #d93801;
     color: #FFFFFF;
     background: #d93801;
 }
