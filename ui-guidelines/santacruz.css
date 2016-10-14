@@ -334,6 +334,10 @@ ul.filter-options li > * {
     margin: 90px auto 0;
 }
 
+.restaurant.card-grid .leaderboard-ad-container {
+    margin: 30px auto 50px;
+}
+
 /* Advertising */
 
 .ad-row{
@@ -358,6 +362,14 @@ ul.filter-options li > * {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+.column.sidebar {
+    padding: 0;
+}
+
+.sidebar .ad-300x250:first-child {
+    margin-top: 50px;
 }
 
 .ad-300x600 {
@@ -775,6 +787,19 @@ section.hero {
 section.hero.short-image {
     border-bottom: 30px solid #d93701;
     position: relative;
+}
+
+section.main.card-grid {
+    padding-top: 0;
+}
+
+.row.featured-card-row {
+    margin: 0 -1.875rem;
+}
+
+.card-grid .featured-card-row .filter {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
 }
 
 .page-title-container {
