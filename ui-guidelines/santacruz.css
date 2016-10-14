@@ -75,7 +75,7 @@ h2{
   color: #d83c26;
 }
 h3{
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #d83c26;
 }
@@ -91,7 +91,7 @@ h5{
   font-weight: 700;
 }
 p{
-  font-size: 1.17rem;
+  font-size: 1rem;
   line-height: 1.5;
   max-width: 650px;
 }
@@ -348,7 +348,7 @@ ul.filter-options li > * {
 
 .ad-row .ad-300x100 {
     display: inline-block;
-    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .ad-300x100:last-child {
@@ -528,6 +528,7 @@ ul.pagination.center {
 .standard-card, .featured-card{
   background-color: white;
   font-family: "franklin-gothic-urw", sans-serif;
+  margin-bottom: 20px;
 }
 
 .standard-card img,
@@ -771,7 +772,7 @@ section.hero {
 
 .hero .background-1 {
   width: 100vw;
-  height: 650px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -782,7 +783,7 @@ section.hero {
 
 .hero .background-2 {
   width: 100vw;
-  min-height: 500px;
+  min-height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 30px solid;
@@ -1104,7 +1105,7 @@ section.hero.profile {
 
 .hero.profile .background-2 {
     width: 100%;
-    height: 650px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 0;
@@ -1121,16 +1122,17 @@ section.hero.profile {
     margin: 0 auto;
     margin-left: 50%;
     transform: translateX(-50%);
-    width: 1320px;
+    max-width: 1320px;
+    width: 100%;
 }
 
 .profile .page-title h1 {
-    font-size: 4rem;
-    padding: 12px 25px;
+    font-size: 1.8rem;
+    padding: 10px 20px;
     position: absolute;
     bottom: 0;
     background-color: rgba(102, 0, 0, 0.75);
-    max-width: 65%;
+    max-width: 90%;
 }
 
 section.main.profile {
@@ -1177,7 +1179,7 @@ section.main.profile {
 
 /* Article */
 .meta {
-    margin: 40px 0 0;
+    margin: 20px 0 0;
     border-bottom: 1px solid #ededed;
     padding-bottom: 30px;
     position: relative;
@@ -1195,14 +1197,14 @@ section.main.profile {
 
 .subtitle h2 {
     font-family: "franklin-gothic-urw", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #404040;
     font-weight: 300;
-    max-width: 75%;
+    max-width: 90%;
 }
 
 .byline, .byline a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-top: 20px;
 }
@@ -1230,7 +1232,7 @@ section.main.profile {
 }
 
 article {
-    margin-top: 80px;
+    margin-top: 40px;
     padding-bottom: 50px;
     border-bottom: 1px solid #ededed;
 }
@@ -1242,6 +1244,9 @@ article {
 
 
 @media only screen and (min-width: 40.0625em){
+  h3{
+    font-size: 2rem;
+  }
   .contain-to-grid {
       background: white;
       box-shadow: 0 0 20px rgba(0,0,0,0.25);
@@ -1366,10 +1371,71 @@ article {
   .standard-card, .featured-card {
       margin-bottom: 20px;
   }
+
+  .hero .background-1 {
+    height: 400px;
+  }
+  .hero.profile .background-2 {
+    height: 400px;
+    min-height: 400px;
+  }
+  .profile .page-title h1 {
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    max-width: 80%;
+  }
+  .byline, .byline a {
+      font-size: 1.35rem;
+  }
+
+  article {
+      margin-top: 60px;
+  }
+
+  .ad-row .ad-300x100 {
+      margin-right: 30px;
+      margin-bottom: 30px;
+  }
 }
 
 @media only screen and (min-width: 64.0625em){
+  p {
+    font-size: 1.17rem;
+  }
   .standard-card, .featured-card {
       margin-bottom: 30px;
+  }
+  .hero .background-1 {
+    height: 650px;
+  }
+  .hero .background-2 {
+    min-height: 500px;
+  }
+  .hero.profile .background-2 {
+    height: 650px;
+  }
+
+  .profile .page-title h1 {
+      font-size: 4rem;
+      padding: 12px 25px;
+      max-width: 65%;
+  }
+  .meta {
+      margin: 40px 0 0;
+  }
+  .subtitle h2 {
+      font-size: 1.8rem;
+      max-width: 75%;
+  }
+  .byline, .byline a {
+      font-size: 1.5rem;
+  }
+  article {
+      margin-top: 80px;
+  }
+
+  .ad-row .ad-300x100 {
+      margin-right: 30px;
+      margin-bottom: 0;
   }
 }
