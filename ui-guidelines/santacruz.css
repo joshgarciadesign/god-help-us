@@ -90,17 +90,31 @@ h5{
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 700;
 }
+@media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
 p{
   font-size: 1rem;
   line-height: 1.5;
   max-width: 650px;
 }
 
+//Added by KC
+h2 a, h3 a {
+  color: #d83c26 !important;
+  border: none !important;
+}
 a:link, a:visited{
   color: #404040;
   text-decoration: none;
   border-bottom: 1px solid #d93801;
-  display: inline-block;
+  //comment out by KC
+  //display: inline-block;
   transition: color 0.3s;
 }
 
@@ -227,7 +241,7 @@ ul.larger li a {
 
 input.datepicker, input.datepicker:focus {
     padding-left: 38px;
-    background-image: url(images/calendar-icon.gif);
+    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/calendar-icon.gif);
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: 12px;
@@ -434,14 +448,15 @@ ul.filter-options li > * {
     color: #fa4c07;
 }
 
-.masonry > .column:first-child {
-    padding-right: 0.9375rem;
-}
+@media only screen and (min-width: 40.063em) {
+  .masonry > .column:first-child {
+      padding-right: 0.9375rem;
+  }
 
-.masonry > .column:first-child .gradient-overlay {
-    width: calc(100% - 0.9375rem);
+  .masonry > .column:first-child .gradient-overlay {
+      width: calc(100% - 0.9375rem);
+  }
 }
-
 
 /* Utility & Helper Classes*/
 
@@ -456,7 +471,8 @@ ul.filter-options li > * {
   display: block;
   content: "";
   width: 100%;
-  padding-top: 56.25%;
+  //comment out by KC
+  //padding-top: 56.25%;
 }
 
 .four-three:before {
@@ -476,7 +492,7 @@ ul.filter-options li > * {
 .sixteen-nine > .content,
 .four-three > .content,
 .square > .content {
-  position: absolute;
+  //position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -538,6 +554,9 @@ ul.pagination.center {
   max-width: 100%;
 }
 
+.card-bottom-margin {
+  margin-bottom: 30px;
+}
 /*.photo-card {
   margin-bottom: 30px;
   transition: transform 0.3s;
@@ -631,6 +650,7 @@ div.address {
   background-color: #dff5f3;
   margin: -15px -25px 0 -15px;
   padding: 15px 25px 15px 15px;
+  min-height: 120px; //Added By KC
 }
 
 p.address {
@@ -655,6 +675,13 @@ p.address a:hover, p.address a:focus{
   margin-top: 15px;
   margin-bottom: 0.75rem;
   line-height: 1.6;
+  //added by KC
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  min-height: 3.6em;
+  max-height: 3.6em;
 }
 
 .featured-card .button {
@@ -664,7 +691,7 @@ p.address a:hover, p.address a:focus{
 
 /* Sign Up Form */
 .sign-up-form {
-    background-image: url(images/teal-herringbone-bg.jpg);
+    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/teal-herringbone-bg.jpg);
     background-repeat: no-repeat;
     height: 125px;
     padding: 40px 20px;
@@ -718,6 +745,9 @@ p.address a:hover, p.address a:focus{
 }
 
 /* Topbar  */
+$topbar-breakpoint: #{lower-bound($large-range)}; // Changed by Josh; show mobile menu on tablet. Change to 9999px for always mobile layout
+$topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
+
 .contain-to-grid .top-bar {
     font-family: "freight-macro-pro", serif;
     background-color: white;
@@ -728,7 +758,7 @@ p.address a:hover, p.address a:focus{
     border-bottom: none;
     width: 185px;
     height: 100%;
-    background-image: url(images/santa-cruz-logo.jpg);
+    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/santa-cruz-logo.jpg);
     background-size: cover;
     text-indent: -9999px;
 }
@@ -819,38 +849,38 @@ section.main.card-grid {
 }
 
 .dine .background-1 {
-  background-image: url('images/dine-cover-photo.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/dine-cover-photo.jpg');
 }
 
 .dine .background-2{
-  background-image: url('images/dine-cover-secondary.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/dine-cover-secondary.jpg');
   border-top-color: #fb4c07;
 }
 
 .stay .background-1 {
-  background-image: url('images/stay-cover-primary.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/stay-cover-primary.jpg');
 }
 
 .stay .background-2{
-  background-image: url('images/stay-cover-secondary.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/stay-cover-secondary.jpg');
   border-top-color: #168dab;
 }
 
 .explore .background-1 {
-  background-image: url('images/explore-cover-primary.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/explore-cover-primary.jpg');
 }
 
 .explore .background-2{
-  background-image: url('images/explore-cover-secondary.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/explore-cover-secondary.jpg');
   border-top-color: #168dab;
 }
 
 .events .background-1 {
-  background-image: url('images/events-cover-photo.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/events-cover-photo.jpg');
 }
 
 .events .background-2{
-  background-image: url('images/events-cover-secondary.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/events-cover-secondary.jpg');
   border-top-color: #168dab;
 }
 
@@ -922,7 +952,7 @@ section.main.card-grid {
 #map {
     min-height: 50vh;
     max-height: 100vh;
-    background-image: url(images/sample-map.jpg);
+    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/sample-map.jpg);
     background-size: cover;
     margin-bottom: 60px;
     border-top: 10px solid #168dab;
@@ -931,25 +961,25 @@ section.main.card-grid {
 /* Section Backgrounds */
 
 .more-restaurants {
-    background-image: url(images/more-restaurants-bg.jpg);
+    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/more-restaurants-bg.jpg);
 }
 
 section.featured-hotels{
-  background-image: url('images/featured-hotels-bg.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/featured-hotels-bg.jpg');
 }
 
 section.attractions {
     border-top: 20px solid hsla(176,43%,65%,1);
-    background-image: url('images/attractions-index-bg.jpg');
+    background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/attractions-index-bg.jpg');
 }
 
 section.nightlife{
   border-top: 20px solid #168dab;
-  background-image: url('images/nightlife-index-bg.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/nightlife-index-bg.jpg');
 }
 
 section.events{
-  background-image: url('images/events-index-bg.jpg');
+  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/events-index-bg.jpg');
 }
 
 section.featured-events {
