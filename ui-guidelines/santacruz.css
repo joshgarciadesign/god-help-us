@@ -745,9 +745,6 @@ p.address a:hover, p.address a:focus{
 }
 
 /* Topbar  */
-$topbar-breakpoint: #{lower-bound($large-range)}; // Changed by Josh; show mobile menu on tablet. Change to 9999px for always mobile layout
-$topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
-
 .contain-to-grid .top-bar {
     font-family: "freight-macro-pro", serif;
     background-color: white;
@@ -1469,3 +1466,7 @@ article {
       margin-bottom: 0;
   }
 }
+
+/* SCSS Topbar Rules*/
+$topbar-breakpoint: #{lower-bound($large-range)}; // Changed by Josh; show mobile menu on tablet. Change to 9999px for always mobile layout
+$topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
