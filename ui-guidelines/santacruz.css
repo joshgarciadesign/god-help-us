@@ -155,6 +155,7 @@ input[type="text"] {
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
     background: white;
     color: #666;
+    border-bottom: none;
 }
 
 .top-bar-section .has-dropdown.not-click:hover > .dropdown {
@@ -162,7 +163,6 @@ input[type="text"] {
     background-color: white;
     box-shadow: 0 10px 10px rgba(0,0,0,0.25);
     border-top: 5px solid #d93801;
-    width: 50vw;
 }
 
 .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
@@ -232,6 +232,69 @@ ul.larger li a {
     line-height: 40.5px !important;
 }
 
+
+/* Mobile Menu */
+
+.top-bar .toggle-topbar.menu-icon a {
+    color: #d93801;
+    height: 34px;
+    line-height: 33px;
+    padding: 0 2.5rem 0 0.9375rem;
+    position: relative;
+    letter-spacing: 0.08rem;
+    border-bottom: none;
+}
+
+.top-bar.expanded .toggle-topbar a {
+    color: #d93801;
+    letter-spacing: 0.08rem;
+    border-bottom: none;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+    box-shadow: 0 0 0 1px #404040, 0 7px 0 1px #404040, 0 14px 0 1px #404040;
+}
+
+.top-bar.expanded .title-area {
+    background: white;
+}
+
+.top-bar-section ul li {
+    background: white;
+}
+
+.top-bar-section ul li > a {
+    font-family: "freight-macro-pro", serif;
+    font-size: 1.125rem;
+    color: #d93801;
+    font-weight: 600;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    border-color: transparent transparent transparent #d93801;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a:after {
+    border-color: transparent transparent transparent white;
+}
+
+li.title.back.js-generated, li.parent-link {
+    padding: 0 0.9375rem;
+}
+
+.top-bar-section .dropdown li:not(.has-form).title.back h5 a:not(.button) {
+    font-size: 0.95rem;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 400;
+}
+
+.top-bar-section .dropdown li:not(.has-form).title.back h5 a:not(.button):before {
+    content: '\2190\00a0';
+    display: inline-block;
+}
+
+
+
 /* Reservation Form */
 .reservation input[type="text"] {
     box-shadow: none;
@@ -241,7 +304,7 @@ ul.larger li a {
 
 input.datepicker, input.datepicker:focus {
     padding-left: 38px;
-    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/calendar-icon.gif);
+    background-image: url(images/calendar-icon.gif);
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: 12px;
@@ -691,7 +754,7 @@ p.address a:hover, p.address a:focus{
 
 /* Sign Up Form */
 .sign-up-form {
-    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/teal-herringbone-bg.jpg);
+    background-image: url(images/teal-herringbone-bg.jpg);
     background-repeat: no-repeat;
     height: 125px;
     padding: 40px 20px;
@@ -755,7 +818,7 @@ p.address a:hover, p.address a:focus{
     border-bottom: none;
     width: 185px;
     height: 100%;
-    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/santa-cruz-logo.jpg);
+    background-image: url(images/santa-cruz-logo.jpg);
     background-size: cover;
     text-indent: -9999px;
 }
@@ -846,38 +909,38 @@ section.main.card-grid {
 }
 
 .dine .background-1 {
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/dine-cover-photo.jpg');
+  background-image: url('images/dine-cover-photo.jpg');
 }
 
 .dine .background-2{
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/dine-cover-secondary.jpg');
+  background-image: url('images/dine-cover-secondary.jpg');
   border-top-color: #fb4c07;
 }
 
 .stay .background-1 {
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/stay-cover-primary.jpg');
+  background-image: url('images/stay-cover-primary.jpg');
 }
 
 .stay .background-2{
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/stay-cover-secondary.jpg');
+  background-image: url('images/stay-cover-secondary.jpg');
   border-top-color: #168dab;
 }
 
 .explore .background-1 {
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/explore-cover-primary.jpg');
+  background-image: url('images/explore-cover-primary.jpg');
 }
 
 .explore .background-2{
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/explore-cover-secondary.jpg');
+  background-image: url('images/explore-cover-secondary.jpg');
   border-top-color: #168dab;
 }
 
 .events .background-1 {
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/events-cover-photo.jpg');
+  background-image: url('images/events-cover-photo.jpg');
 }
 
 .events .background-2{
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/events-cover-secondary.jpg');
+  background-image: url('images/events-cover-secondary.jpg');
   border-top-color: #168dab;
 }
 
@@ -949,7 +1012,7 @@ section.main.card-grid {
 #map {
     min-height: 50vh;
     max-height: 100vh;
-    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/sample-map.jpg);
+    background-image: url(images/sample-map.jpg);
     background-size: cover;
     margin-bottom: 60px;
     border-top: 10px solid #168dab;
@@ -958,25 +1021,25 @@ section.main.card-grid {
 /* Section Backgrounds */
 
 .more-restaurants {
-    background-image: url(https://city-imgs.blvds.com/uploads/creative/szn/more-restaurants-bg.jpg);
+    background-image: url(images/more-restaurants-bg.jpg);
 }
 
 section.featured-hotels{
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/featured-hotels-bg.jpg');
+  background-image: url('images/featured-hotels-bg.jpg');
 }
 
 section.attractions {
     border-top: 20px solid hsla(176,43%,65%,1);
-    background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/attractions-index-bg.jpg');
+    background-image: url('images/attractions-index-bg.jpg');
 }
 
 section.nightlife{
   border-top: 20px solid #168dab;
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/nightlife-index-bg.jpg');
+  background-image: url('images/nightlife-index-bg.jpg');
 }
 
 section.events{
-  background-image: url('https://city-imgs.blvds.com/uploads/creative/szn/events-index-bg.jpg');
+  background-image: url('images/events-index-bg.jpg');
 }
 
 section.featured-events {
@@ -1324,7 +1387,6 @@ article {
       background-color: white;
       box-shadow: 0 10px 10px rgba(0,0,0,0.25);
       border-top: 5px solid #d93801;
-      width: 50vw !important;
       transform: translateX(-33%);
   }
 
@@ -1353,6 +1415,7 @@ article {
       text-transform: none;
       background: white;
       background-color: white;
+      border-bottom: none;
   }
 
   .top-bar-section .dropdown li:not(.has-form) h6 a:not(.button),
@@ -1429,6 +1492,10 @@ article {
   p {
     font-size: 1.17rem;
   }
+  .top-bar-section .has-dropdown.not-click:hover > .dropdown {
+      width: 50vw !important;
+  }
+
   .standard-card, .featured-card {
       margin-bottom: 30px;
   }
