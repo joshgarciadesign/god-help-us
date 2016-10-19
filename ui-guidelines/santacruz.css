@@ -1557,6 +1557,42 @@ a.button.facebook:hover {
     font-family: "franklin-gothic-urw",sans-serif;
 }
 
+/* Account Section */
+
+.account p {
+    padding-left: 0.9375rem;
+}
+
+.account-cta .button {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: none;
+}
+
+.account .event-photo {
+    padding-left: 1.875rem;
+}
+
+.account .event-listing {
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 0 5px;
+}
+
+.account .event-listing h4 {
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.event-edit .button {
+    margin-bottom: 0;
+    margin-top: 10px;
+    border: none;
+}
+
+.account.events .row.event-listing:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
 
 
 
