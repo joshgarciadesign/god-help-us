@@ -8,6 +8,10 @@
     max-width: 100vw;
 }
 
+.row.full-width {
+    max-width: 100%;
+}
+
 section:not(.top-bar-section){
   max-width: 100vw;
   padding: 65px 0 85px;
@@ -93,6 +97,8 @@ h5{
 @media only screen and (max-width: 40em) {
   h1 {
     font-size: 2.8rem;
+    font-size: 2.125rem;
+    margin-right: 0.9375rem;
   }
   h2 {
     font-size: 1.8rem;
@@ -130,6 +136,14 @@ button, a.button{
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
   letter-spacing: 0.03em;
+}
+
+a.button.center {
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  width: auto;
+  transform: translateX(-50%);
 }
 
 button:hover, a.button:hover, a.button:focus {
@@ -756,8 +770,9 @@ p.address a:hover, p.address a:focus{
 .sign-up-form {
     background-image: url(images/teal-herringbone-bg.jpg);
     background-repeat: no-repeat;
-    height: 125px;
-    padding: 40px 20px;
+    min-height: 125px;
+    padding: 40px 20px 20px;
+    background-size: cover;
 }
 
 .sign-up-form p {
@@ -880,7 +895,7 @@ section.hero {
 }
 
 section.hero.short-image {
-    border-bottom: 30px solid #d93701;
+    border-bottom: 15px solid #d93701;
     position: relative;
 }
 
@@ -904,8 +919,9 @@ section.main.card-grid {
 }
 
 .hero.short-image .background {
-    height: 300px;
+    height: 80px;
     background-position: center;
+    background-size: cover;
 }
 
 .dine .background-1 {
@@ -947,7 +963,7 @@ section.main.card-grid {
 .page-title h1 {
     color: white;
     line-height: 1;
-    margin: 0;
+    margin: 0 0.9375rem;
 }
 
 .hero .intro, .hero .ad {
@@ -1327,6 +1343,219 @@ article {
     border-bottom: 1px solid #ededed;
 }
 
+/* Footer */
+footer{
+  background-color: #d73c26;
+  color: #fff;
+}
+.footer-first {
+    height: 320px;
+    padding-top: 55px;
+}
+.footer-first .row {
+    position: relative;
+}
+
+.footer-first .small-first2 {
+    padding-left: 140px;
+}
+
+footer h4,
+footer h4 a,
+footer h4 a:link,
+footer h4 a:hover {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white !important;
+  border-bottom: none;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.footer-first ul li a {
+    color: #d9d9d9;
+    font-weight: 300;
+    cursor: pointer;
+    display: block;
+    border-bottom: none;
+    list-style-type: none;
+    letter-spacing: 0.05em;
+}
+
+
+h4.footer-logo {
+    background-image: url(images/footer-logo.png);
+    background-size: 100%;
+    width: 150px;
+    height: 27px;
+    text-indent: -9999px;
+}
+
+ul.footer-first-links {
+    margin-left: 0;
+    list-style-type: none;
+    line-height: 1.8;
+}
+
+footer .surf-statue {
+    position: absolute;
+    width: 120px;
+    height: 320px;
+    background-image: url(images/surfer-footer.png);
+    background-size: cover;
+    top: -55px; /* Same as Footer First Padding-Top */
+}
+
+.footer-second {
+    background-color: #292929;
+    padding: 45px 0 58px;
+}
+
+.footer-second, .footer-second a {
+    font-family: "franklin-gothic-urw", sans-serif;
+    color: #666;
+    font-size: 0.75rem;
+    border-bottom: none;
+}
+
+.first-links, .second-links {
+    margin-bottom: 0;
+}
+
+.first-links a, .second-links a {
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    margin-right: 15px;
+}
+
+.second-links a {
+    font-size: 0.65rem;
+    color: #666;
+}
+
+.second-links + span {
+    font-size: 0.65rem;
+    color: #555;
+    margin-top: 10px;
+    display: block;
+}
+
+.main-footer-action{
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  font-size: 1rem;
+  color: #bfbfbf
+}
+
+.main-footer-action img, .main-footer-action p {
+    margin-right: 15px;
+    line-height: 24px;
+    height: 24px;
+    vertical-align: sub;
+}
+
+/* Sign In */
+section.sign-in {
+    background-image: url(images/sign-up-bg.jpg);
+    background-size: cover;
+}
+
+.sign-in-box {
+    text-align: center;
+    background-color: white;
+    padding: 70px;
+    border-bottom: 7px solid #aaa;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+.sign-in h1 {
+    font-size: 2.6667rem;
+    margin-bottom: 1.6667rem;
+}
+
+a.button.facebook {
+    background-color: #3b5998;
+    border-bottom: none;
+}
+
+a.button.facebook:hover {
+    background-color: #2a406f;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+}
+.hr-text:before {
+  content: '';
+  background: -webkit-linear-gradient(left, transparent, #818078, transparent);
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  color: #818078;
+  background-color: #fcfcfa;
+}
+
+.sign-in input[type="text"], .sign-in input[type="password"] {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sign-in-box .small {
+    font-family: "franklin-gothic-urw", sans-serif;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.sign-in-box .small input,
+.sign-in-box .small label {
+  font-size: 14px;
+  float: left;
+  display: inline;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.sign-in-box .small.right {
+    float: right !important;
+    text-align: right;
+    line-height: 1;
+}
+
+.sign-in-box h3 {
+    color: #808080;
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-top: 60px;
+}
+
+.sign-in-box h3 a.orange {
+    color: #d83c26;
+}
+
+.sign-in-box p {
+    font-family: "franklin-gothic-urw",sans-serif;
+}
 
 
 
@@ -1334,6 +1563,10 @@ article {
 
 
 @media only screen and (min-width: 40.0625em){
+  h1 {
+    font-size: 4rem;
+  }
+
   h3{
     font-size: 2rem;
   }
@@ -1341,6 +1574,10 @@ article {
       background: white;
       box-shadow: 0 0 20px rgba(0,0,0,0.25);
   }
+  .contain-to-grid .top-bar {
+    max-width: 100%;
+  }
+
   .top-bar-section li:not(.has-form) a:not(.button) {
     color: #fa4c07;
     font-size: 1.8rem;
@@ -1355,6 +1592,10 @@ article {
     background-color: #d93801;
     background: #d93801;
     color: white;
+  }
+
+  .top-bar ul.right {
+    max-width: 300px;
   }
 
   .top-bar-section .has-form {
@@ -1469,10 +1710,23 @@ article {
     height: 400px;
     min-height: 400px;
   }
+  section.hero.short-image {
+      border-bottom: 30px solid #d93701;
+  }
+
+  .hero.short-image .background {
+      height: 180px;
+  }
+
+  .page-title h1 {
+    margin: 0;
+  }
+
   .profile .page-title h1 {
     font-size: 2.5rem;
     padding: 10px 20px;
     max-width: 80%;
+    margin: 0;
   }
   .byline, .byline a {
       font-size: 1.35rem;
@@ -1482,13 +1736,24 @@ article {
       margin-top: 60px;
   }
 
+  .container h2, .container h3 {
+    padding: 0 0.9375rem;
+  }
+
   .ad-row .ad-300x100 {
       margin-right: 30px;
       margin-bottom: 30px;
   }
+
+  .sign-up-form p {
+      margin-right: 20px;
+  }
 }
 
 @media only screen and (min-width: 64.0625em){
+  .contain-to-grid .top-bar {
+    max-width: 80%;
+  }
   p {
     font-size: 1.17rem;
   }
@@ -1509,6 +1774,14 @@ article {
     height: 650px;
   }
 
+  .hero.short-image .background {
+      height: 300px;
+  }
+
+  .background-1 .container {
+    padding-top: 140px;
+  }
+
   .profile .page-title h1 {
       font-size: 4rem;
       padding: 12px 25px;
@@ -1520,6 +1793,7 @@ article {
   .subtitle h2 {
       font-size: 1.8rem;
       max-width: 75%;
+      padding-left: 0;
   }
   .byline, .byline a {
       font-size: 1.5rem;
@@ -1534,6 +1808,16 @@ article {
   }
 }
 
-/* SCSS Topbar Rules*/
-$topbar-breakpoint: #{lower-bound($large-range)}; // Changed by Josh; show mobile menu on tablet. Change to 9999px for always mobile layout
+
+/* SCSS Topbar Rules */
+$screen: "only screen";
+$small-breakpoint:  em-calc(640);
+$medium-breakpoint: em-calc(1024);
+$large-breakpoint:  em-calc(1440);
+$xlarge-breakpoint: em-calc(1920);
+
+$small-range:   (0, $small-breakpoint);
+$medium-range:  ($small-breakpoint  + em-calc(1), $medium-breakpoint);
+$large-range:   ($medium-breakpoint + em-calc(1), $large-breakpoint);
+$topbar-breakpoint: #{lower-bound($large-range)}; /*Changed by Josh; show mobile menu on tablet. Change to 9999px for always mobile layout*/
 $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
