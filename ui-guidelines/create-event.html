@@ -1,0 +1,557 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+       href="http://cdn.foundation5.zurb.com/foundation.css">
+    <link rel="stylesheet" href="santacruz.css" type="text/css" media="all">
+    <link rel="stylesheet" href="foundation.calendar.css" type="text/css" media="all">
+    <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+    <script src="https://use.typekit.net/mgx5scd.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <section class="main account forms">
+      <div class="container">
+        <div class="row title">
+          <div class="small-12 columns">
+            <h1>Create Event</h1>
+          </div>
+          <hr>
+        </div>
+        <div class="row collapse">
+          <div class="medium-8 columns left-account-column">
+            <div data-event="event_edit" id="event_edit">
+          		<form id="update_event_listing" class="listing_update_form" method="post">
+          				<input type="hidden" name="id" value="0">
+          		<input type="hidden" name="site_id" value="">
+          				<!-- span class="required">* = Required</span -->
+
+
+
+
+          		<div class="form-section card-container extra-padding nofloat">
+                <h3>Details</h3>
+          				<fieldset id="eventTitle" class="control-group">
+          										<label class="field control-label required">Event Title *</label>
+          					<div class="controls">
+          						<input class="text" type="text" name="name" value="" placeholder="Enter Event Title">
+          					</div>
+          				</fieldset>
+          				<fieldset id="phone" class="control-group">
+          										<label class="field control-label">Phone Number</label>
+          										<div class="controls">
+          						<input class="text" type="text" name="tel" value="" placeholder="Enter Phone Number (###) ###-####"></div>
+          				</fieldset>
+          				<fieldset id="website" class="control-group">
+          										<label class="field control-label">Website</label>
+          					<div class="controls">
+          						<input class="text" type="text" name="website" value="">
+          					</div>
+          				</fieldset>
+          									<input type="hidden" name="status" value="1">
+          								<fieldset class="control-group" rel="popover" placeholder="Add Event Images" data-content="The cover image is displayed on your event profile page. The thumbnail is displayed on the events listing page as well as throughout the website. Providing an image will dramatically increase the chances someone views your event." data-original-title="">
+          					<div class="controls">
+          						<div id="event-cover" class="event-list-img">
+          							<label>Cover Image</label>
+          														<div class="upload_wrapper">
+          								<img data-img="cover_full_img" data-thm="header_img" class="croppable upload_img hide" src="" data-sizes="620x310=header_img">
+          								<div class="filestyle_wrapper" style="width: 89px; height: 73px; background: url(&quot;http://cdn.boulevards.com/imgs/add-image.png&quot;) right center no-repeat; display: inline; position: absolute; overflow: hidden; background-size: cover"><input type="file" class="upload_img" name="photo" data-width="620" data-height="310" data-thm="header_img" style="position: relative; height: 98px; width: 300px; display: inline; cursor: pointer; opacity: 0; margin-left: -181px;"></div>
+          															</div>
+          							<p class="muted smaller">At least 1320px wide x 650px tall</p>
+          							<input name="header_img" class="text" type="hidden" value="">
+          							<input name="cover_full_img" type="hidden" value="">
+          						</div>
+          					</div>
+                    <div class="controls">
+          						<div id="event-image" class="event-list-img">
+          							<label>Event Images</label>
+													<div class="upload_wrapper">
+            								<img data-img="cover_full_img" data-thm="header_img" class="croppable upload_img hide" src="" data-sizes="620x310=header_img">
+            								<div class="filestyle_wrapper" style="width: 89px; height: 73px; background: url(&quot;http://cdn.boulevards.com/imgs/add-image.png&quot;) right center no-repeat; display: inline; position: absolute; overflow: hidden; background-size: cover"><input type="file" class="upload_img" name="photo" data-width="620" data-height="310" data-thm="header_img" style="position: relative; height: 98px; width: 300px; display: inline; cursor: pointer; opacity: 0; margin-left: -181px;"></div>
+													</div>
+          							<p class="muted smaller">At least 1320px wide x 650px tall</p>
+          							<input name="header_img" class="text" type="hidden" value="">
+          							<input name="cover_full_img" type="hidden" value="">
+          						</div>
+          					</div>
+          				</fieldset>
+                  <fieldset id="media" class="control-group">
+					<label class="notify"><i class="icon-picture"></i> Photo Gallery</label>
+					<p class="muted smaller">Max dimensions of 1024x1000 pixels. 2MB max file size.</p>
+					<div class="photos clearfix">
+																					<div class="photo empty_slot">
+									<div class="upload_wrapper">
+										<img data-img="photos[0][img_url]" data-thm="photos[0][thm_url]" class="upload_img hide">
+										<div class="filestyle_wrapper" style="width: 119px; height: 98px; background: url(&quot;http://cdn.boulevards.com/imgs/add-image.png&quot;) right center no-repeat; display: inline; position: absolute; overflow: hidden;"><input type="file" class="upload_img" name="photo" data-width="119" data-height="90" data-thm="photos[0][thm_url]" style="position: relative; height: 98px; width: 300px; display: inline; cursor: pointer; opacity: 0; margin-left: -181px;"></div>
+									</div>
+									<input name="photos[0][img_url]" class="text upload_img_field" type="hidden" value="">
+									<input name="photos[0][thm_url]" class="text upload_thm_field" type="hidden" value="">
+															</div>
+																						<div class="photo empty_slot">
+									<div class="upload_wrapper">
+										<img data-img="photos[1][img_url]" data-thm="photos[1][thm_url]" class="upload_img hide">
+										<div class="filestyle_wrapper" style="width: 119px; height: 98px; background: url(&quot;http://cdn.boulevards.com/imgs/add-image.png&quot;) right center no-repeat; display: inline; position: absolute; overflow: hidden;"><input type="file" class="upload_img" name="photo" data-width="119" data-height="90" data-thm="photos[1][thm_url]" style="position: relative; height: 98px; width: 300px; display: inline; cursor: pointer; opacity: 0; margin-left: -181px;"></div>
+									</div>
+									<input name="photos[1][img_url]" class="text upload_img_field" type="hidden" value="">
+									<input name="photos[1][thm_url]" class="text upload_thm_field" type="hidden" value="">
+															</div>
+																						<div class="photo empty_slot">
+									<div class="upload_wrapper">
+										<img data-img="photos[2][img_url]" data-thm="photos[2][thm_url]" class="upload_img hide">
+										<div class="filestyle_wrapper" style="width: 119px; height: 98px; background: url(&quot;http://cdn.boulevards.com/imgs/add-image.png&quot;) right center no-repeat; display: inline; position: absolute; overflow: hidden;"><input type="file" class="upload_img" name="photo" data-width="119" data-height="90" data-thm="photos[2][thm_url]" style="position: relative; height: 98px; width: 300px; display: inline; cursor: pointer; opacity: 0; margin-left: -181px;"></div>
+									</div>
+									<input name="photos[2][img_url]" class="text upload_img_field" type="hidden" value="">
+									<input name="photos[2][thm_url]" class="text upload_thm_field" type="hidden" value="">
+															</div>
+													<div class="photo empty_slot">
+							<div class="upload_wrapper">
+								<img data-img="photos[3][img_url]" data-thm="photos[3][thm_url]" class="upload_img hide">
+								<div class="filestyle_wrapper" style="width: 119px; height: 98px; background: url(&quot;http://cdn.boulevards.com/imgs/add-image.png&quot;) right center no-repeat; display: inline; position: absolute; overflow: hidden;"><input type="file" class="upload_img" name="photo" data-width="119" data-height="90" data-thm="photos[3][thm_url]" style="position: relative; height: 98px; width: 300px; display: inline; cursor: pointer; opacity: 0; margin-left: -181px;"></div>
+							</div>
+							<input name="photos[3][img_url]" class="text upload_img_field" type="hidden" value="">
+							<input name="photos[3][thm_url]" class="text upload_thm_field" type="hidden" value="">
+						</div>
+					</div>
+				</fieldset>
+          		</div>
+
+          		<div class="form-section card-container extra-padding nofloat">
+                <h3>Location</h3>
+          			<div class="bd" rel="popover" placeholder="Add Event Location" data-content="This information will be used to connect your event listing along with other events for a given location.">
+          				<fieldset id="location" class="control-group">
+          					<label class="field control-label required">Location Name *</label>
+          										<div class="controls">
+          						<ul class="token-input-list text"><li class="token-input-input-token"><input type="text" autocomplete="off" id="token-input-business_list" tabindex="0" style="outline: none;"><tester style="position: absolute; top: -9999px; left: -9999px; width: auto; font-size: 14px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: normal; white-space: nowrap;"></tester></li></ul><input class="text" type="text" id="business_list" name="business" value="" style="display: none;">
+          					</div>
+          					<input type="hidden" id="venue" name="venue" value="">
+          				</fieldset>
+          				<fieldset id="add-new-business" class="control-group hide">
+          					<div class="controls no-label">
+          						<a href="#newBusinessModal" id="" role="button" class="btn btn-link btn-small" data-toggle="modal"><i class="icon-search"></i> Don't see your location? Add it here.</a>
+          					</div>
+          				</fieldset>
+          			</div>
+          		</div>
+
+          		<div data-event="event_edit_schedule" class="form-section card-container extra-padding nofloat">
+                <h3>Schedule</h3>
+          		<div class="bd">
+          			<span class="error-placeholder" id="before_schedule_placeholder"></span>
+          			<fieldset id="schedule" class="control-group">
+          				<label class="field control-label required">Date &amp; Time *</label>
+          				<div class="controls">
+          					<input name="start_date" class="date startdate hasDatepicker" type="text" placeholder="start date" value="" id="dp1476912703477">
+          					<input name="start_time" class="hourStart timepicker ui-timepicker-input" type="text" placeholder="start time" value="" autocomplete="off">
+          					<span class="btn btn-link btn-small event_end_trigger "><i class="icon-plus-sign"></i> end time and date (optional)</span>
+          					<span class="event_end_set hide">
+          						<span>–</span>
+          						<input name="end_time" class="hourEnd timepicker ui-timepicker-input" type="text" placeholder="end time" value="" autocomplete="off">
+          						<input name="end_date" class="date enddate hasDatepicker" type="text" placeholder="end date" value="" id="dp1476912703481">
+          					</span>
+          				</div>
+          				<div id="hours-error-msg"></div>
+          			</fieldset>
+          						<fieldset id="scheduleFrequency" class="control-group" rel="popover" data-content="For reoccuring events simply choose the recurring schedule. If your event has varying dates and times use the custom option." data-original-title="">
+          				<span class="error-placeholder" id="before_repeat_placeholder"></span>
+          				<div class="controls no-label">
+          					<label class="checkbox inline">
+          						<input type="checkbox" name="event_repeat" value="1"> <span>This event repeats</span>
+          					</label>
+          					<div class="hide" id="scheduleFrequency-options">
+          						<label class="radio inline">
+          								<input type="radio" name="event_frequency" id="event_repeat_daily" value="daily"> <span>Daily</span>
+          						</label>
+          						<label class="radio inline">
+          								<input type="radio" name="event_frequency" id="event_repeat_weekly" value="weekly"> <span>Weekly</span>
+          						</label>
+          						<label class="radio inline">
+          								<input type="radio" name="event_frequency" id="event_repeat_monthly" value="monthly"> <span>Monthly</span>
+          						</label>
+          						<label class="radio inline">
+          								<input type="radio" name="event_frequency" id="event_repeat_custom" value="custom"> <span>Custom</span>
+          						</label>
+          					</div>
+          				</div>
+          			</fieldset>
+          			<fieldset id="repeatDaily-content" class="control-group schedule-repeat-content hide">
+          				<span class="error-placeholder" id="before_daily_repeatevery_placeholder"></span>
+          				<div class="controls no-label">
+          					<span>Repeat every:</span>
+          					<select id="day_frequency" name="day_frequency">
+          												<option>1</option>
+          												<option>2</option>
+          												<option>3</option>
+          												<option>4</option>
+          												<option>5</option>
+          												<option>6</option>
+          												<option>7</option>
+          												<option>8</option>
+          												<option>9</option>
+          												<option>10</option>
+          												<option>11</option>
+          												<option>12</option>
+          												<option>13</option>
+          												<option>14</option>
+          												<option>15</option>
+          												<option>16</option>
+          												<option>17</option>
+          												<option>18</option>
+          												<option>19</option>
+          												<option>20</option>
+          												<option>21</option>
+          												<option>22</option>
+          												<option>23</option>
+          												<option>24</option>
+          												<option>25</option>
+          												<option>26</option>
+          												<option>27</option>
+          												<option>28</option>
+          												<option>29</option>
+          												<option>30</option>
+          												<option>31</option>
+          											</select>
+          					<span>day(s)</span>
+          				</div>
+          				<span class="error-placeholder" id="before_daily_repeatuntil_placeholder"></span>
+          				<div class="controls no-label">
+          					<span>Repeat from:</span>
+          					<input name="daily_frequency_start_date" class="date startdate hasDatepicker" type="text" title="repeat from" value="" id="dp1476912703478">
+          					<span>To:</span>
+          					<input name="daily_frequency_end_date" class="date enddate hasDatepicker" type="text" title="repeat to" value="" id="dp1476912703482">
+          				</div>
+          			</fieldset>
+          			<fieldset id="repeatWeekly-content" class="control-group schedule-repeat-content hide">
+          				<span class="error-placeholder" id="before_weekly_repeatevery_placeholder"></span>
+          				<div class="controls no-label">
+          					<span>Repeat every:</span>
+          					<select id="weekly_frequency" name="weekly_frequency">
+          												<option>1</option>
+          												<option>2</option>
+          												<option>3</option>
+          												<option>4</option>
+          											</select>
+          					<span>week(s) on</span>
+          										<ul id="selectable-days" class="selectable">
+          						<li class="" data-value="SU">S</li><li class="" data-value="MO">M</li><li class="" data-value="TU">T</li><li class="" data-value="WE">W</li><li class="" data-value="TH">T</li><li class="" data-value="FR">F</li><li class="" data-value="SA">S</li>
+          					</ul>
+          					<input type="hidden" class="hidden-input" name="days_of_week" value="">
+          				</div>
+          				<span class="error-placeholder" id="before_weekly_repeatuntil_placeholder"></span>
+          				<div class="controls no-label">
+          					<span>Repeat from:</span>
+          					<input name="weekly_frequency_start_date" class="date startdate hasDatepicker" type="text" title="repeat from" value="" id="dp1476912703479">
+          					<span>To:</span>
+          					<input name="weekly_frequency_end_date" class="date enddate hasDatepicker" type="text" title="repeat to" value="" id="dp1476912703483">
+          				</div>
+          			</fieldset>
+          			<fieldset id="repeatMonthly-content" class="control-group schedule-repeat-content hide">
+          				<span class="error-placeholder" id="before_monthly_repeatevery_placeholder"></span>
+          				<div class="controls no-label">
+          					<span>Repeat every:</span>
+          					<select id="monthly_frequency" name="monthly_frequency">
+          												<option>1</option>
+          												<option>2</option>
+          												<option>3</option>
+          												<option>4</option>
+          												<option>5</option>
+          												<option>6</option>
+          												<option>7</option>
+          												<option>8</option>
+          												<option>9</option>
+          												<option>10</option>
+          												<option>11</option>
+          												<option>12</option>
+          											</select>
+          					<span>month(s)</span>
+          				</div>
+          				<div class="controls no-label" id="monthly_repeat_multidays">
+          										<label class="radio inline">
+          						<input type="radio" name="monthly_repeat_options" checked="checked" value="multidays"> <span>Each:</span></label>
+          					<ul id="selectable-month" class="selectable">
+          																			<li class="" data-value="1">1</li>
+          													<li class="" data-value="2">2</li>
+          													<li class="" data-value="3">3</li>
+          													<li class="" data-value="4">4</li>
+          													<li class="" data-value="5">5</li>
+          													<li class="" data-value="6">6</li>
+          													<li class="" data-value="7">7</li>
+          													<li class="" data-value="8">8</li>
+          													<li class="" data-value="9">9</li>
+          													<li class="" data-value="10">10</li>
+          													<li class="" data-value="11">11</li>
+          													<li class="" data-value="12">12</li>
+          													<li class="" data-value="13">13</li>
+          													<li class="" data-value="14">14</li>
+          													<li class="" data-value="15">15</li>
+          													<li class="" data-value="16">16</li>
+          													<li class="" data-value="17">17</li>
+          													<li class="" data-value="18">18</li>
+          													<li class="" data-value="19">19</li>
+          													<li class="" data-value="20">20</li>
+          													<li class="" data-value="21">21</li>
+          													<li class="" data-value="22">22</li>
+          													<li class="" data-value="23">23</li>
+          													<li class="" data-value="24">24</li>
+          													<li class="" data-value="25">25</li>
+          													<li class="" data-value="26">26</li>
+          													<li class="" data-value="27">27</li>
+          													<li class="" data-value="28">28</li>
+          													<li class="" data-value="29">29</li>
+          													<li class="" data-value="30">30</li>
+          													<li class="" data-value="31">31</li>
+          											</ul>
+          					<input type="hidden" class="hidden-input" name="days_of_month" value="">
+          				</div>
+          				<div class="controls no-label" id="monthly_repeat_ordinal">
+          					<label class="radio inline"><input type="radio" name="monthly_repeat_options" id="" value="ordinal"> <span>On the:</span></label>
+          										<select name="sequence" id="sequence" class="span1" disabled="disabled">
+          												<option value="1">First</option>
+          												<option value="2">Second</option>
+          												<option value="3">Third</option>
+          												<option value="4">Fourth</option>
+          												<option value="5">Fifth</option>
+          												<option value="-1">Last</option>
+          											</select>
+          					<select name="days" id="days" class="span1" disabled="disabled">
+          												<option value="MO">Mon</option>
+          												<option value="TU">Tue</option>
+          												<option value="WE">Wed</option>
+          												<option value="TH">Thu</option>
+          												<option value="FR">Fri</option>
+          												<option value="SA">Sat</option>
+          												<option value="SU">Sun</option>
+          											</select>
+          				</div>
+          				<span class="error-placeholder" id="before_monthly_repeatuntil_placeholder"></span>
+          				<div class="controls no-label">
+          					<span>Repeat from:</span>
+          					<input name="monthly_frequency_start_date" class="date startdate hasDatepicker" type="text" title="repeat from" value="" id="dp1476912703480">
+          					<span>To:</span>
+          					<input name="monthly_frequency_end_date" class="date enddate hasDatepicker" type="text" title="repeat to" value="" id="dp1476912703484">
+          				</div>
+          			</fieldset>
+          			<fieldset id="repeatCustom-content" class="control-group schedule-repeat-content hide">
+          				<div id="multidays_custom_inputs_wrapper" class="controls no-label">
+          										<span class="error-placeholder"></span>
+          					<div class="multidays_custom_input" id="custom_date_div_0">
+          						<input name="custom_start_dates[]" class="date customStartDate hasDatepicker" type="text" placeholder="start date" value="" id="dp1476912703485">
+          						<input name="custom_start_times[]" class="hourStart timepicker ui-timepicker-input" type="text" placeholder="start time" value="" autocomplete="off">
+          						<span class="btn btn-link btn-small event_end_trigger"><i class="icon-plus-sign"></i> end time and date (optional)</span>
+          						<span class="event_end_set hide">
+          							<span>–</span>
+          							<input name="custom_end_times[]" class="hourEnd timepicker ui-timepicker-input" type="text" placeholder="end time" value="" autocomplete="off">
+          							<input name="custom_end_dates[]" class="date customEndDate hasDatepicker" type="text" placeholder="end date" value="" id="dp1476912703486">
+          						</span>
+          					</div>
+          									</div>
+          				<div id="more_dates_container" class="controls no-label">
+          					<span id="more_dates_trigger" class="btn btn-link btn-small"><i class="icon-plus-sign"></i> Add more date(s)</span>
+          				</div>
+          			</fieldset>
+          			<fieldset id="applyAllEvents-content" class="control-group apply-all-events-content hide">
+          				<label class="field control-label">Update all dates in the schedule?</label>
+          				<div id="apply_all_events_container" class="controls">
+          										<label class="checkbox inline">
+          						<input type="checkbox" name="apply_all_events" value="1" checked="checked"> <span>Yes, update for all dates in the schedule</span>
+          					</label>
+          				</div>
+          			</fieldset>
+          		</div>
+          </div>
+          		<div class="form-section card-container extra-padding nofloat">
+                <h3>Describe this event</h3>
+          			<div class="bd" rel="popover" data-content="This information is where you want to highlight what your event is about and why visitors should go." placeholder="Add Event Description" data-original-title="">
+          				<fieldset id="description" class="control-group">
+          					<label class="field control-label">Event Description</label>
+          										<div class="controls">
+          						<textarea name="content" rows="7"></textarea>
+          					</div>
+          				</fieldset>
+          			</div>
+          		</div>
+
+          		<div class="form-section card-container extra-padding nofloat">
+                <h3>Searchability</h3>
+          			<div class="bd">
+          				<fieldset id="ecategories" class="control-group">
+          					<label class="field control-label class required">Categories *</label>
+          										<div class="controls">
+          						<select name="ecategories[]" multiple="multiple">
+          															<option value="5">Adult</option>
+          															<option value="6">Arts</option>
+          															<option value="22">Attractions</option>
+          															<option value="7">Benefits</option>
+          															<option value="8">Classes &amp; Lectures</option>
+          															<option value="9">Clubs</option>
+          															<option value="10">Comedy</option>
+          															<option value="11">Community, Festivals &amp; Parades</option>
+          															<option value="12">Conferences</option>
+          															<option value="13">Dance</option>
+          															<option value="14">Fashion &amp; Style</option>
+          															<option value="15">Film</option>
+          															<option value="16">Food &amp; Drink</option>
+          															<option value="17">Happy Hour</option>
+          															<option value="18">LGBT</option>
+          															<option value="19">Literary</option>
+          															<option value="2">Music</option>
+          															<option value="4">Other</option>
+          															<option value="20">Political</option>
+          															<option value="21">Shopping</option>
+          															<option value="1">Sports &amp; Recreation</option>
+          															<option value="3">Theater</option>
+          													</select>
+          					</div>
+          					<p class="muted no-label smaller">To choose multiple, hold down on CTRL (PC) or COMMAND (Mac) when selecting.</p>
+          				</fieldset>
+          				<fieldset id="ageGroup" class="control-group">
+          					<label class="field control-label">Target Age</label>
+          										<div class="controls">
+          											<label class="radio inline"><input type="radio" name="age" value="family friendly"><span>family friendly</span></label>
+          											<label class="radio inline"><input type="radio" name="age" value="18+"><span>18+</span></label>
+          											<label class="radio inline"><input type="radio" name="age" value="21+"><span>21+</span></label>
+          										</div>
+          				</fieldset>
+          				<fieldset id="performers" class="control-group" rel="popover" data-content="Add the people performing at this event to increase the chances your event will be found." placeholder="Add Event Performers" data-original-title="">
+          					<label class="field control-label">Performer(s)</label>
+          										<div class="controls">
+          						<ul class="token-input-list text"><li class="token-input-input-token"><input type="text" autocomplete="off" id="token-input-performer_list" tabindex="0" style="outline: none;"><tester style="position: absolute; top: -9999px; left: -9999px; width: auto; font-size: 14px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: normal; white-space: nowrap;"></tester></li></ul><input class="text" type="text" id="performer_list" name="performers" value="" style="display: none;">
+          					</div>
+          				</fieldset>
+          				<fieldset id="benefit" class="control-group">
+          					<label class="field control-label">Is this a Benefit for a 503c Non-Profit?</label>
+          										<div class="controls">
+          						<label class="checkbox inline"><input type="checkbox" name="is_benefit" value="1"> <span>Yes, this is a benefit</span></label>
+          					</div>
+          				</fieldset>
+          			</div>
+          		</div>
+
+          		<div class="form-section card-container extra-padding nofloat">
+                <h3>Price &amp; Tickets</h3>
+          			<div class="bd">
+          				<fieldset id="prices" class="control-group">
+          					<label class="field control-label">Price</label>
+          										<div class="controls">
+          						<div class="input-prepend">
+          							<span class="add-on">Min $</span><input class="span1" type="text" name="min_price" value="">
+          						</div>
+          												<div class="input-prepend">
+          							<span class="add-on">Max $</span><input class="span1" type="text" name="max_price" value="">
+          						</div>
+          												<label class="checkbox inline"><input type="checkbox" name="is_free" value="1"><span>Free Event</span></label>
+          					</div>
+          					<p class="muted no-label smaller">If only one price, use the "Min" field</p>
+          				</fieldset>
+          				<fieldset id="ticketUrl" class="control-group" rel="popover" data-content="Include a link so visitors can purchase and/or attend your event." placeholder="Link to tickets page">
+          					<label class="field control-label">Ticket URL</label>
+          					<div class="controls">
+          												<input class="text" type="text" name="tickets_url" value="">
+          					</div>
+          				</fieldset>
+          			</div>
+          		</div>
+
+          		<p>
+          			<button id="submit_btn" name="submit_update" class="btn btn-large btn-success " type="submit" value="submit" disabled="disabled">Save Event</button>
+          					</p>
+          	</form>
+          </div>
+          </div><!-- .left-account-column -->
+          <div class="medium-4 columns sidebar show-for-large-up">
+            <div class="ad-300x250">
+              <img src="images/b2b-ad.jpg" width="300" height="250" alt="Ad">
+            </div>
+          </div>
+        </div><!-- .row -->
+      <div><!-- .container -->
+    </section>
+
+    <footer>
+      <div class="row full-width sign-up-form">
+        <div class="small-12 medium-8 medium-offset-2">
+          <div class="row collapse center-vertical">
+            <div class="large-8 columns">
+              <p>Get exclusive local offers &amp; discounts sent right to your inbox</p>
+            </div>
+            <div class="large-4 columns">
+              <form>
+                <div class="row collapse">
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="Your Email Address">
+                  </div>
+                  <div class="small-3 columns">
+                    <a href="#" class="button postfix">Sign Up</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='footer-first'>
+        <div class="row">
+          <div class="surf-statue"></div>
+          <div class="small-first2 medium-3 large-6 columns">
+            <h4 class="footer-logo">SantaCruz.com</h4>
+            <ul class="inline-list social">
+              <a href="#"><i class="fi-social-facebook"></i></a>
+              <a href="#"><i class="fi-social-twitter"></i></a>
+              <a href="#"><i class="fi-social-linkedin"></i></a>
+              <a href="#"><i class="fi-social-github"></i></a>
+            </ul>
+          </div>
+          <div class="small-6 medium-3 large-2 columns">
+            <h4><a href="#">Explore</a></h4>
+            <ul class="footer-first-links">
+              <li><a href="#">Parks</a></li>
+              <li><a href="#">Beaches</a></li>
+              <li><a href="#">Golf</a></li>
+              <li><a href="#">Museums</a></li>
+              <li><a href="#">Wineries</a></li>
+            <ul>
+          </div>
+          <div class="small-6 medium-3 large-2 columns">
+            <h4><a href="#">Stay</a></h4>
+            <ul class="footer-first-links">
+              <li><a href="#">Boutique</a></li>
+              <li><a href="#">Luxury</a></li>
+              <li><a href="#">Pet Friendly</a></li>
+            <ul>
+          </div>
+          <div class="small-6 medium-3 large-2 columns">
+            <h4><a href="#">Dine</a></h4>
+            <ul class="footer-first-links">
+              <li><a href="#">American</a></li>
+              <li><a href="#">Chinese</a></li>
+              <li><a href="#">French</a></li>
+              <li><a href="#">Indian</a></li>
+              <li><a href="#">Italian</a></li>
+            <ul>
+          </div>
+        </div>
+      </div>
+      <div class='footer-second'>
+        <div class="row">
+          <div class="small-first2 medium-6 columns">
+            <p class="first-links">
+              <a href="#">ABOUT US</a>
+              <a href="#">ADVERTISE WITH US</a>
+            </p>
+            <p class="second-links">
+              <a href="#">TERM OF USE</a>
+              <a href="#">PRIVACY POLICY</a>
+            </p>
+            <span>&copy; 2016 SantaCruz.com: A City Guide by Boulevards. All Rights Reserved.</span>
+          </div>
+          <div class="small-first2 medium-6 columns main-footer-action">
+            <p><img src="images/add-event-icon.png" width="24" alt="add business">Add your business</p>
+            <p><img src="images/add-event-icon.png" width="24" alt="add listing">List your event</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
