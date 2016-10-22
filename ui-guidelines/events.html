@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
        href="http://cdn.foundation5.zurb.com/foundation.css">
     <link rel="stylesheet" href="santacruz.css" type="text/css" media="all">
@@ -32,8 +33,7 @@
                 </ol>
               </div>
               <div class="opening">
-                <p>Buffeted by the Santa Cruz Mountains and Monterey Bay, Santa Cruz attractions offer a variety of activities for the entire family. The Santa Cruz Beach Boardwalk, Monterey Bay Aquarium and The Mystery Spot have long drawn tourists and residents alike.</p>
-                <p>Home to the Santa Cruz Warriors, the city hosts basketball games at the downtown stadium every season starting in November. The Seymour Marine Discovery Center and Sanctuary Exploration Center near the Santa Cruz Wharf offers a window into the local marine environment.  &hellip;</p>
+                <p>There's a huge array of events in Santa Cruz! From cutting-edge indie bands, to family-friendly day trips, to whatever else you can imagine. Add some intro text here&hellip;</p>
                 <p><a>Read More</a></p>
               </div>
               <div class="categories">
@@ -43,9 +43,43 @@
                 <a href="#" class="button dark-orange small">Sports</a>
                 <a href="#" class="button dark-orange small">Theater</a>
               </div>
+              <div class="view-event-calendar">
+                <a href="#event-calendar" class="button teal-bg large">View Event Calendar</a>
+              </div>
             </div><!--.intro  -->
 
-            <div class="ad large-4 column">
+            <div class="ad large-4 column has-reservation show-for-large-up sidebar">
+              <div class="hotel-reservation-box event">
+                <div class="row collapse reservation-header">
+                  <div class="large-6 columns dark-orange-bg">
+                    Find an Event
+                  </div>
+                  <div class="large-6 columns">
+                    + Event (Pt 2)
+                  </div>
+                </div>
+                <div class="reservation-body">
+                  <form class="reservation">
+                    <div class="row">
+                      <div class="small-6 columns">
+                        <label>Name<br>
+                          <input type="text" class="" placeholder="Elvis, Cher, etc">
+                        </label>
+                      </div>
+                      <div class="small-6 columns">
+                          <label>Date<br>
+                            <input type="text" class="datepicker" placeholder="10/26/16">
+                          </label>
+                        </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="small-12 column">
+                        <a href="#" class="button small">Find It!</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
               <div class="ad-300x250">
                 <img src="images/300x250-ad.jpg" width="300" height="250" alt="Ad">
               </div>
@@ -70,7 +104,7 @@
       </div>
     </section>
 
-    <section class="featured-events">
+    <section class="event-categories">
       <div class="container">
         <div class="row collapse">
           <h2>Event Types</h2>
@@ -117,7 +151,7 @@
             </div>
           </div>
           <div class="large-4 column sidebar">
-            <div class="ad-300x600">
+            <div class="ad-300x600 show-for-large-up">
               <img src="images/300x600-ad.jpg" width="300" height="600" alt="Ad">
             </div>
           </div>
@@ -128,7 +162,144 @@
       </div>
     </section>
 
-    <section class="calendar-container">
+    <section class="featured-events dark-gray-bg">
+      <div class="container">
+        <h2>Featured Events</h2>
+        <div class="row">
+          <div class="large-8 column">
+            <div class="row">
+              <div class="medium-6 large-4 column">
+                <div class="featured-card event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                      <div class="gradient-overlay">
+                        <h4>Event Title Goes Here on Several Lines</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="address">
+                      <p class="address">Friday, October 28<br>
+                    </div>
+                    <p class="description">Excerpt of event description goes here, with approx 65 chars&hellip;</p>
+                    <a href="#" class="button radius tiny">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 large-4 column">
+                <div class="featured-card event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                      <div class="gradient-overlay">
+                        <h4>Event Title Goes Here on Several Lines</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="address">
+                      <p class="address">Friday, October 28<br>
+                    </div>
+                    <p class="description">Excerpt of event description goes here, with approx 65 chars&hellip;</p>
+                    <a href="#" class="button radius tiny">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 large-4 column">
+                <div class="featured-card event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                      <div class="gradient-overlay">
+                        <h4>Event Title Goes Here on Several Lines</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="address">
+                      <p class="address">Friday, October 28<br>
+                    </div>
+                    <p class="description">Excerpt of event description goes here, with approx 65 chars&hellip;</p>
+                    <a href="#" class="button radius tiny">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 large-4 column">
+                <div class="featured-card event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                      <div class="gradient-overlay">
+                        <h4>Event Title Goes Here on Several Lines</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="address">
+                      <p class="address">Friday, October 28<br>
+                    </div>
+                    <p class="description">Excerpt of event description goes here, with approx 65 chars&hellip;</p>
+                    <a href="#" class="button radius tiny">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 large-4 column">
+                <div class="featured-card event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                      <div class="gradient-overlay">
+                        <h4>Event Title Goes Here on Several Lines</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="address">
+                      <p class="address">Friday, October 28<br>
+                    </div>
+                    <p class="description">Excerpt of event description goes here, with approx 65 chars&hellip;</p>
+                    <a href="#" class="button radius tiny">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 large-4 column">
+                <div class="featured-card event">
+                  <div class="sixteen-nine">
+                    <div class="content">
+                      <img src="images/event-1.jpg" alt="Listing Card Image" width="300" height="170">
+                      <div class="gradient-overlay">
+                        <h4>Event Title Goes Here on Several Lines</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="address">
+                      <p class="address">Friday, October 28<br>
+                    </div>
+                    <p class="description">Excerpt of event description goes here, with approx 65 chars&hellip;</p>
+                    <a href="#" class="button radius tiny">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="large-4 show-for-large-up column sidebar">
+            <div class="ad-300x250">
+              <img src="images/300x250-ad.jpg" width="300" height="250" alt="Ad">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-10">
+            <a href="#" class="button">View More Events</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="calendar-container" id="event-calendar">
       <div class="container">
         <ul class="calendar">
           <li class="title">
@@ -630,6 +801,91 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="row full-width sign-up-form">
+        <div class="small-12 medium-8 medium-offset-2">
+          <div class="row collapse center-vertical">
+            <div class="large-8 columns">
+              <p>Get exclusive local offers &amp; discounts sent right to your inbox</p>
+            </div>
+            <div class="large-4 columns">
+              <form>
+                <div class="row collapse">
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="Your Email Address">
+                  </div>
+                  <div class="small-3 columns">
+                    <a href="#" class="button postfix">Sign Up</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='footer-first'>
+        <div class="row">
+          <div class="surf-statue"></div>
+          <div class="small-first2 medium-3 large-6 columns">
+            <h4 class="footer-logo">SantaCruz.com</h4>
+            <ul class="inline-list social">
+              <a href="#"><i class="fi-social-facebook"></i></a>
+              <a href="#"><i class="fi-social-twitter"></i></a>
+              <a href="#"><i class="fi-social-linkedin"></i></a>
+              <a href="#"><i class="fi-social-github"></i></a>
+            </ul>
+          </div>
+          <div class="small-6 medium-3 large-2 columns">
+            <h4><a href="#">Explore</a></h4>
+            <ul class="footer-first-links">
+              <li><a href="#">Parks</a></li>
+              <li><a href="#">Beaches</a></li>
+              <li><a href="#">Golf</a></li>
+              <li><a href="#">Museums</a></li>
+              <li><a href="#">Wineries</a></li>
+              <ul>
+          </div>
+          <div class="small-6 medium-3 large-2 columns">
+            <h4><a href="#">Stay</a></h4>
+            <ul class="footer-first-links">
+              <li><a href="#">Boutique</a></li>
+              <li><a href="#">Luxury</a></li>
+              <li><a href="#">Pet Friendly</a></li>
+              <ul>
+          </div>
+          <div class="small-6 medium-3 large-2 columns">
+            <h4><a href="#">Dine</a></h4>
+            <ul class="footer-first-links">
+              <li><a href="#">American</a></li>
+              <li><a href="#">Chinese</a></li>
+              <li><a href="#">French</a></li>
+              <li><a href="#">Indian</a></li>
+              <li><a href="#">Italian</a></li>
+              <ul>
+          </div>
+        </div>
+      </div>
+      <div class='footer-second'>
+        <div class="row">
+          <div class="small-first2 medium-6 columns">
+            <p class="first-links">
+              <a href="#">ABOUT US</a>
+              <a href="#">ADVERTISE WITH US</a>
+            </p>
+            <p class="second-links">
+              <a href="#">TERM OF USE</a>
+              <a href="#">PRIVACY POLICY</a>
+            </p>
+            <span>&copy; 2016 SantaCruz.com: A City Guide by Boulevards. All Rights Reserved.</span>
+          </div>
+          <div class="small-first2 medium-6 columns main-footer-action">
+            <p><img src="images/add-event-icon.png" width="24" alt="add business">Add your business</p>
+            <p><img src="images/add-event-icon.png" width="24" alt="add listing">List your event</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>

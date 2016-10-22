@@ -14,7 +14,7 @@
 
 section:not(.top-bar-section){
   max-width: 100vw;
-  padding: 65px 0 85px;
+  padding: 30px 0 40px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -136,6 +136,12 @@ button, a.button{
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
   letter-spacing: 0.03em;
+  border-bottom: none;
+}
+
+a.button.small {
+    font-size: 1rem;
+    padding: 0.875rem 1.33rem;
 }
 
 a.button.center {
@@ -544,6 +550,21 @@ ul.filter-options li > * {
   overflow: hidden;
 }
 
+.category-card .sixteen-nine,
+.category-card .four-three,
+.category-card .square {
+    position: relative;
+    overflow: hidden;
+    margin-top: -56.25%;
+}
+
+.category-card .sixteen-nine:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%;
+}
+
 .sixteen-nine:before {
   display: block;
   content: "";
@@ -622,6 +643,10 @@ ul.pagination.center {
   background-color: white;
   font-family: "franklin-gothic-urw", sans-serif;
   margin-bottom: 20px;
+}
+
+.photo-card {
+    margin-bottom: 30px;
 }
 
 .standard-card img,
@@ -727,7 +752,7 @@ div.address {
   background-color: #dff5f3;
   margin: -15px -25px 0 -15px;
   padding: 15px 25px 15px 15px;
-  min-height: 120px; //Added By KC
+  min-height: 60px; //Added 120 By KC, changed to 60 by Josh
 }
 
 p.address {
@@ -880,10 +905,11 @@ section.hero {
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .background-1 .container {
-    padding-top: 400px;
+    padding-top: 60px;
 }
 
 .hero .background-2 {
@@ -892,6 +918,11 @@ section.hero {
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 30px solid;
+  margin-bottom: -120px;
+}
+
+.background-2 .ad {
+    margin-top: 60px;
 }
 
 section.hero.short-image {
@@ -960,15 +991,25 @@ section.main.card-grid {
   border-top-color: #168dab;
 }
 
+.hero.stay .hotel-reservation-box {
+    margin-top: 0;
+}
+
 .page-title h1 {
     color: white;
     line-height: 1;
     margin: 0 0.9375rem;
+    font-size: 4rem;
+}
+
+.short-image .page-title h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .hero .intro, .hero .ad {
     position: relative;
-    top: -120px;
+    top: -180px;
 }
 
 .hero .intro {
@@ -1761,6 +1802,244 @@ span.sale-price {
   margin-bottom: 0;
 }
 
+/* Home Page */
+.home .hero .randomize {
+    background-image: url(images/home-hero-1.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 240px;
+}
+
+.home .hero h1 {
+  text-align: center;
+  background: url(images/welcome-to-santa-cruz.png) no-repeat center center;
+  background-size: cover;
+  text-indent: -9999px;
+  width: 315px;
+  height: 220px;
+  margin: 10px auto;
+}
+
+section.leaderboard {
+  width: 738px;
+  text-align: center;
+  padding: 0;
+  margin: -50px 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.stay + section.leaderboard {
+    margin: -30px 50%;
+}
+
+section.leaderboard + section.hotel-categories {
+    border-top: 30px solid #d1ecea;
+    padding-top: 70px;
+}
+
+.main-leaderboard {
+    padding: 5px;
+    background-color: #f2f2f2;
+}
+
+.home section.stay {
+    background-image: url(images/stay-bg.jpg);
+    border-top: 15px solid #53cfb8;
+}
+.home section.dine {
+    background-color: #2e2118;
+    border-top: 15px solid #790300;
+}
+.home section.explore {
+    background-image: url(images/explore-bg.jpg);
+    border-top: 15px solid #f78db6;
+}
+section.photo-guide-row {
+    border-top: 15px solid #168dab;
+    background-color: #f2f2f2;
+    padding-top: 0;
+}
+
+.home h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+.intro .opening {
+    background-color: white;
+    padding: 20px;
+}
+
+.home .stay a.button.cta,
+.home .dine a.button.cta,
+.home .explore a.button.cta {
+    margin-top: 40px;
+}
+
+section.ad-row {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.home .dine .sidebar {
+    margin-top: 226px;
+}
+
+.featured-card.event .address {
+    min-height: 40px;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.home .explore .container > .row {
+  position: relative;
+}
+
+.home .explore .sidebar {
+  position: absolute;
+  right: 0;
+  bottom: 140px;
+}
+
+.photo-guide-card h4,
+.category-card h4 {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+    width: 80%;
+    color: #d93801;
+    font-weight: 600;
+    line-height: 1;
+}
+
+section.sibling-categories{
+  background-color: #0a2633;
+  padding-top: 60px;
+  padding-bottom: 85px;
+}
+.sibling-categories h3{
+  color: white;
+}
+
+
+/* Reservation Box */
+.hotel-reservation-box {
+    font-family: "franklin-gothic-urw", sans-serif;
+    color: #808080;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.reservation-header {
+    background-color: #d7d7d8;
+}
+
+.reservation-header > .columns {
+    padding: 15px !important;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 1.1em;
+}
+
+.hotel-reservation-box label,
+.hotel-reservation-box input[type="text"],
+.hotel-reservation-box select,
+.hotel-reservation-box p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #808080;
+}
+
+.hotel-reservation-box p {
+  margin-bottom: 0px;
+}
+
+.hotel-reservation-box a.button {
+    margin-bottom: 0;
+}
+
+.hotel-reservation-box .reservation-body,
+.hotel-reservation-box .call {
+  background-color: #f2f3f3;
+  padding: 15px;
+}
+
+.hotel-reservation-box .columns:last-child {
+  padding-right: 0.9375rem;
+}
+
+p.call-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #262626;
+    line-height: 1;
+    font-family: "freight-macro-pro", serif;
+    letter-spacing: 0.05em;
+}
+
+.big-question {
+    background-color: #53ceb7;
+    padding: 30px 0;
+}
+
+.big-question h3 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+section.breadcrumb-container {
+    background-color: #d93701;
+    padding: 10px 0;
+    margin-top: -30px;
+}
+.breadcrumb-container .breadcrumbs {
+    margin: 10px 0 8px;
+}
+.breadcrumb-container .breadcrumbs > * {
+    color: #99e9ff;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.breadcrumb-container .breadcrumbs > * a:link {
+    color: #eee;
+    font-weight: 300;
+}
+.breadcrumb-container .breadcrumbs > * a:link:after {
+    color: #43d4fe;
+}
+
+.row.leaderboard-row {
+    margin-bottom: 40px;
+}
+
+.category-card {
+    margin-bottom: 30px;
+}
+
+.sibling-categories .sidebar {
+    margin-top: 11px;
+}
+
+.has-reservation .hotel-reservation-box {
+    margin: 0 0.9375rem 40px;
+}
+
+
+
+
+
+
 
 
 
@@ -1906,6 +2185,28 @@ span.sale-price {
       margin-bottom: 20px;
   }
 
+  .home .hero .randomize {
+    height: 400px;
+  }
+  .home .hero h1 {
+      width: 516px;
+      height: 360px;
+      margin: 20px auto;
+  }
+
+  .short-image .page-title h1 {
+    font-size: 4rem;
+  }
+
+  .home h2 {
+    font-size: 6rem;
+  }
+
+  .home .intro .opening {
+      background-color: white;
+      padding: 20px 50px 20px 20px;
+  }
+
   .hero .background-1 {
     height: 400px;
   }
@@ -1921,8 +2222,13 @@ span.sale-price {
       height: 180px;
   }
 
+  .background-1 .container {
+    padding-top: 120px;
+  }
+
   .page-title h1 {
     margin: 0;
+    font-size: 6rem;
   }
 
   .profile .page-title h1 {
@@ -1951,12 +2257,37 @@ span.sale-price {
   .sign-up-form p {
       margin-right: 20px;
   }
+
+  .hotel-reservation-box {
+      margin-top: 70px;
+  }
+
+
+  .hotel-reservation-box .columns {
+    padding-right: 0;
+  }
+  .photo-guide-card h4 {
+      width: 90%;
+  }
+  .home section.stay {
+      border-top: 20px solid #53cfb8;
+  }
+  .home section.dine {
+      border-top: 20px solid #790300;
+  }
+  .home section.explore {
+      border-top: 20px solid #f78db6;
+  }
+  section.photo-guide-row {
+      border-top: 20px solid #168dab;
+  }
 }
 
 @media only screen and (min-width: 64.0625em){
   .contain-to-grid .top-bar {
     max-width: 80%;
   }
+
   p {
     font-size: 1.17rem;
   }
@@ -1967,22 +2298,38 @@ span.sale-price {
   .standard-card, .featured-card {
       margin-bottom: 30px;
   }
+  .page-title h1 {
+    margin: 0;
+    font-size: 8rem;
+  }
+  .short-image .page-title h1 {
+    font-size: 4rem;
+  }
+  .home .hero .randomize {
+    height: 600px;
+  }
+  .home .hero h1 {
+      width: 630px;
+      height: 440px;
+      margin: 80px auto;
+  }
   .hero .background-1 {
-    height: 650px;
+    height: 500px;
   }
   .hero .background-2 {
-    min-height: 500px;
+    min-height: 300px;
+    margin-bottom: -120px;
   }
   .hero.profile .background-2 {
     height: 650px;
   }
 
-  .hero.short-image .background {
-      height: 300px;
+  .background-1 .container {
+    padding-top: 180px;
   }
 
-  .background-1 .container {
-    padding-top: 140px;
+  .background-2 .ad {
+    margin-top: 0;
   }
 
   .profile .page-title h1 {
@@ -2008,6 +2355,24 @@ span.sale-price {
   .ad-row .ad-300x100 {
       margin-right: 30px;
       margin-bottom: 0;
+  }
+  .hotel-reservation-box {
+      margin-top: 164px;
+  }
+  .photo-guide-card h4 {
+      width: 60%;
+  }
+  .home section.stay {
+      border-top: 30px solid #53cfb8;
+  }
+  .home section.dine {
+      border-top: 30px solid #790300;
+  }
+  .home section.explore {
+      border-top: 30px solid #53cfb8;
+  }
+  section.photo-guide-row {
+      border-top: 30px solid #168dab;
   }
 }
 
