@@ -2036,7 +2036,89 @@ section.breadcrumb-container {
 }
 
 
+/* Reservation Page */
+.booking-terms {
+    max-height: 300px;
+    overflow: auto;
+    padding: 10px;
+}
 
+.booking-terms,
+.booking-terms p,
+.booking-terms ol,
+.booking-terms li {
+    font-size: 0.75rem;
+}
+
+.booking-terms p,
+.booking-terms ol,
+.booking-terms li {
+    padding-left: 0;
+}
+
+.hotels-reservation h3 {
+    line-height: 1.1;
+}
+
+h4.property-name {
+    font-size: 1.25rem;
+}
+
+address.property-address {
+    font-size: 14px;
+}
+
+dl {
+  margin-bottom: 0.75rem;
+}
+
+#secondaryContent {
+    font-size: 0.9rem;background-color: #ecf8f8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#priceInfo dl dd {
+    margin-bottom: 0.125rem;
+    text-align: right;
+}
+
+#priceInfo dl dt {
+  float: left;
+  clear: both;
+width: 50%;
+}
+
+.additional-info p{
+  padding-left: 0;
+}
+
+
+div#additionalInfo,
+div#additionalInfo p,
+div#additionalInfo ul,
+div#additionalInfo ol,
+div#additionalInfo li {
+    font-size: 0.75rem;
+}
+
+h3 small {
+    margin-top: 10px;
+    display: block;
+    line-height: 1.1;
+}
+
+.alert-info {
+    background-color: #f7f7f7;
+}
+
+.hotels-reservation hr {
+    margin: 0.5rem 0;
+}
+
+button#checkout_submit {
+    margin-top: 35px;
+}
 
 
 
