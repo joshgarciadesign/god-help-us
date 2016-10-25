@@ -2120,6 +2120,50 @@ button#checkout_submit {
     margin-top: 35px;
 }
 
+/* Vivid Seats */
+.productionsEvent {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #007d9c;
+}
+
+.productionsDay {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.65em;
+    font-family: "franklin-gothic-urw", sans-serif;
+    color: #999;
+}
+
+.productionsDate {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.productionsDateCol {
+    text-align: center;
+}
+
+.table-data.odd {
+    background-color: rgba(0,0,0,0.04);
+}
+
+.table-data.even {
+    background-color: rgba(0,0,0,0.07);
+}
+
+.row.table-data {
+    border: 1px solid #fff;
+    padding: 15px;
+    margin-bottom: -1px;
+}
+
+.dataTables-wrapper .row{
+  border-bottom: 1px solid #fff;
+  padding: 15px;
+}
+
 
 
 
