@@ -1976,6 +1976,10 @@ section.sibling-categories{
   padding-right: 0.9375rem;
 }
 
+.kids-ages {
+    padding-top: 5px;
+}
+
 .kids-ages .columns {
     margin-right: 2.2%;
     width: 14.8%;
