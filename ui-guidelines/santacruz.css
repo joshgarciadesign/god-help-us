@@ -1271,6 +1271,7 @@ section.hero.profile {
     transform: translateX(-50%);
     max-width: 1320px;
     width: 100%;
+    height: 100%;
 }
 
 .profile .page-title h1 {
@@ -1973,6 +1974,15 @@ section.sibling-categories{
 
 .hotel-reservation-box .columns:last-child {
   padding-right: 0.9375rem;
+}
+
+.kids-ages .columns {
+    margin-right: 2.2%;
+    width: 14.8%;
+}
+
+.kids-ages .columns:last-child {
+    margin-right: 0;
 }
 
 p.call-number {
