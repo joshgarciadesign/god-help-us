@@ -1748,6 +1748,54 @@ article.wide.listing {
     margin-bottom: 0;
 }
 
+.hotel-list .slider {
+  max-width: 500px;
+  width: 100%;
+  border-bottom: 3px solid white;
+}
+
+.hotel-list .slider-for {
+  border-top: 3px solid #d83c26;
+  border-left: 3px solid #d83c26;
+  border-right: 3px solid #d83c26;
+}
+
+.hotel-list .slider-nav {
+  border-bottom: 3px solid #d83c26;
+  border-left: 3px solid #d83c26;
+  border-right: 3px solid #d83c26;
+}
+
+.hotel-list .slider-nav {
+    height: 100px;
+}
+
+.hotel-list .slider-nav > button {
+  position: absolute;
+  z-index: 10;
+  top: -15px;
+}
+
+.hotel-list .slider-nav .slick-prev {
+    left: -3px;
+}
+
+.hotel-list .slider-nav .slick-next {
+    right: -3px;
+}
+
+.hotel-list .slider-nav .slick-slide {
+    border-right: 3px solid white;
+}
+
+.hotel-list .slider-nav button, .hotel-list .slider-nav a.button {
+    border-radius: 0;
+    transition: background-color 0.3s;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .tripadvisor-rating:before {
     content: '';
     display: inline-block;
@@ -1935,6 +1983,10 @@ section.sibling-categories{
     color: #808080;
     font-weight: 300;
     margin-top: 20px;
+}
+
+.sidebar .hotel-reservation-box {
+    margin-top: 0;
 }
 
 .reservation-header {
