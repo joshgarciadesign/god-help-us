@@ -139,6 +139,14 @@ button, a.button{
   border-bottom: none;
 }
 
+.reservation button,
+.reservation button:hover,
+.reservation button:focus,
+.reservation .button:hover,
+.reservation .button:focus {
+  background-color: #b83000;
+}
+
 a.button.small {
     font-size: 1rem;
     padding: 0.875rem 1.33rem;
@@ -320,6 +328,11 @@ li.title.back.js-generated, li.parent-link {
     box-shadow: none;
     border: 1px solid #ccc;
     background-color: #fafafa;
+}
+
+.reservation input[disabled] {
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,0.07);
 }
 
 input.datepicker, input.datepicker:focus {
@@ -1733,6 +1746,10 @@ article.wide.listing {
   min-height: 0;
 }
 
+.hotel-list p {
+    font-size: 1rem;
+}
+
 .ratings-reviews {
     font-size: 0.9em;
     margin-bottom: 10px;
@@ -1764,10 +1781,7 @@ article.wide.listing {
   border-bottom: 3px solid #d83c26;
   border-left: 3px solid #d83c26;
   border-right: 3px solid #d83c26;
-}
-
-.hotel-list .slider-nav {
-    height: 100px;
+  height: auto;
 }
 
 .hotel-list .slider-nav > button {
@@ -1987,6 +2001,7 @@ section.sibling-categories{
 
 .sidebar .hotel-reservation-box {
     margin-top: 0;
+    margin-bottom: 100px;
 }
 
 .reservation-header {
@@ -2026,6 +2041,10 @@ section.sibling-categories{
 
 .hotel-reservation-box .columns:last-child {
   padding-right: 0.9375rem;
+}
+
+.hotel-reservation-box .row .small-4.columns:nth-child(3n) {
+    padding-right: 0.9375rem !important;
 }
 
 .kids-ages {
