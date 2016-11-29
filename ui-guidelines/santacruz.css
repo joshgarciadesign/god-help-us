@@ -128,8 +128,11 @@ a:hover, a:focus{
   color: #d93801
 }
 
-button, a.button{
-  background-color: #d93800;
+button,
+a.button,
+.button{
+  background-color: #d93800 !important;
+  border-color: transparent !important;
   border-radius: 3px;
   color: white;
   transition: background-color 0.3s;
@@ -138,6 +141,15 @@ button, a.button{
   letter-spacing: 0.03em;
   border-bottom: none;
 }
+
+button:hover,
+a.button:hover,
+.button:hover{
+  background-color: #b83000 !important;
+  border-color: transparent !important;
+}
+
+
 
 .btn-primary {
     background-color: #fa4c07;
@@ -796,16 +808,16 @@ p.address a:hover, p.address a:focus{
   color: #666666;
   font-size: 0.8em;
   font-weight: 300;
-  margin-top: 15px;
-  margin-bottom: 0.75rem;
+  margin-top: 12px;
+  margin-bottom: 0;
   line-height: 1.6;
   //added by KC
   display: block;
   text-overflow: ellipsis;
   word-wrap: break-word;
   overflow: hidden;
-  min-height: 3.6em;
-  max-height: 3.6em;
+  min-height: 3em;
+  max-height: 3em;
 }
 
 .featured-card .button {
@@ -1756,7 +1768,8 @@ article.wide.listing {
 }
 
 .hotel-list p {
-    font-size: 1rem;
+    font-size: 1rem !important;
+    padding-left: 0;
 }
 
 .hotel-list p > strong:first-child {
@@ -2329,6 +2342,159 @@ button#checkout_submit {
     width: auto;
     text-transform: none;
 }
+
+
+/* Checkout Form Card Types */
+
+fieldset.card-type {
+    margin: 0;
+    padding: 0;
+}
+.card-type legend {
+    font-weight: normal;
+}
+
+.card-type legend {
+  font-weight: normal;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.card-type input[type="radio"] {
+  margin: 0 !important;
+}
+
+.card-type input[type="radio"] + label {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 0;
+  vertical-align: baseline;
+  background-size: cover;
+  filter: grayscale(1);
+  transition: filter 0.3s;
+  text-indent: -9999px;
+}
+
+.card-type input[type="radio"] + label:hover,
+.card-type input[type="radio"] + label:active,
+.card-type input[type="radio"] + label:focus {
+    filter: grayscale(0);
+}
+
+.card-type input[type="radio"]:checked + label,
+.card-type input[type="radio"]:checked + label,
+.card-type input[type="radio"]:checked + label {
+    filter: grayscale(0);
+}
+
+.card-type label.visa {
+    width: 52px;
+    height: 16px;
+    background-image: url(http://joshgarcia.design/santacruz/ui-guidelines/images/visa-color.png);
+}
+
+.card-type label.mastercard {
+    width: 108px;
+    height: 19px;
+    background-image: url(http://joshgarcia.design/santacruz/ui-guidelines/images/mastercard-color.png);
+}
+
+.card-type label.american_express {
+    width: 64px;
+    height: 19px;
+    background-image: url(http://joshgarcia.design/santacruz/ui-guidelines/images/amex-color.png);
+}
+
+
+div#formCTA {
+    margin-top: 2rem;
+}
+
+.term-conditions {
+    margin-bottom: 1rem;
+}
+
+/* Confirmation Page */
+.confirmation .confirmation-intro,
+.confirmation .confirmation-details {
+  margin-bottom: 80px;
+}
+.confirmation-intro {
+  text-align: center;
+}
+.confirmation-intro h1 {
+  font-size: 2.67rem;
+  font-weight: 600;
+}
+.confirmation-intro h2, .confirmation-intro h3 {
+  font-family: "FranklinGothic URW", sans-serif;
+  color: #737373;
+  font-weight: 400;
+  font-size: 1.167rem;
+}
+
+.confirmation-intro span.email {
+  font-weight: 600;
+}
+
+.confirmation {
+  font-family: "FranklinGothic URW", "Helvetica Neue", Helvetica, sans-serif;
+  color: #737373;
+}
+
+.confirmation .label {
+  background-color: transparent;
+  color: #737373;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  text-align: left;
+  padding: 0;
+  font-family: "FranklinGothic URW", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.77rem;
+}
+
+.confirmation hr {
+  margin: 1.25em 0;
+}
+
+.confirmation strong {
+  font-weight: 500;
+}
+
+p.cancellation-policy {
+  padding-left: 0;
+  font-size: 0.8em;
+  margin-top: 8px;
+}
+
+.confirmation-upsell {
+  background-color: #f9f9f9;
+}
+
+img.circular {
+  border-radius: 50%;
+}
+
+.confirmation-upsell h5 {
+  text-align: center;
+  font-size: 1.367rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: "freight-mac-pro", serif;
+  padding: 30px 0;
+}
+
+
+
+
 
 
 
